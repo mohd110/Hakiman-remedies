@@ -1,0 +1,39 @@
+{
+  "_note": "DEMO DATA ONLY. Sample orders for testing the order-history UI. Not real customers or real orders. Line prices are resolved from products.json at render time.",
+  "orders": [
+    {
+      "id": "DEMO-1001",
+      "isDemo": true,
+      "placedAt": "2026-10-02T10:24:00+05:30",
+      "status": "Delivered",
+      "customer": "Demo Customer A",
+      "lines": [
+        { "productId": "hk-11", "qty": 1 },
+        { "productId": "hk-22", "qty": 2 }
+      ]
+    },
+    {
+      "id": "DEMO-1002",
+      "isDemo": true,
+      "placedAt": "2026-10-11T17:05:00+05:30",
+      "status": "Shipped",
+      "customer": "Demo Customer A",
+      "lines": [
+        { "productId": "hk-23", "qty": 1 },
+        { "productId": "hk-12", "qty": 1 }
+      ]
+    },
+    {
+      "id": "DEMO-1003",
+      "isDemo": true,
+      "placedAt": "2026-10-18T09:40:00+05:30",
+      "status": "Processing",
+      "customer": "Demo Customer A",
+      "lines": [
+        { "productId": "hk-24", "qty": 1 },
+        { "productId": "hk-21", "qty": 1 },
+        { "productId": "hk-13", "qty": 1 }
+      ]
+    }
+  ]
+}

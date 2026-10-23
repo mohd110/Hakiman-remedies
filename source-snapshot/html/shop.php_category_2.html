@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Shop All | The Hakiman</title>
+<meta name="description" content="Discover authentic, luxury Ayurvedic remedies and wellness products for modern living. Trusted heritage meets modern wellness.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Hakiman",
+  "url": "https://thehakiman.com",
+  "logo": "https://thehakiman.com/assets/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+
+<link rel="canonical" href="https://thehakiman.com/shop.php?category=2">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Shop All | The Hakiman">
+<meta property="og:description" content="Discover authentic, luxury Ayurvedic remedies and wellness products for modern living. Trusted heritage meets modern wellness.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Hakiman">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shop All | The Hakiman">
+<meta name="twitter:description" content="Discover authentic, luxury Ayurvedic remedies and wellness products for modern living. Trusted heritage meets modern wellness.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/fab.png">
+    <link rel="apple-touch-icon" href="/assets/fab.png">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <!-- [NEW] Logo ke rang wali theme + hover animations + search/wishlist/categories UI -->
+    <link rel="stylesheet" href="/assets/css/theme.css?v=3">
+
+    <style>
+        /* -------------------------------------------
+           Global Header Tokens & Reset
+        ------------------------------------------- */
+        :root {
+            --c-forest: #2D3A24; 
+            --c-cream: #F6F5EE;
+            --c-white: #FFFFFF;
+            --c-tint: #EEF2E5;
+            --c-orange-primary: #55703D;
+            --c-orange-dark: #3D5229;
+            --c-gray-100: #f3f4f6;
+            --c-gray-600: #555555;
+            
+            --transition-fast: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            --header-height-desktop: 88px;
+            --header-height-mobile: 72px;
+        }
+
+        html, body { 
+            overflow-x: hidden; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--c-cream);
+        }
+
+        body, p, span, a, input, button { font-family: 'Jost', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        
+        :focus-visible { outline: 2px solid var(--c-orange-primary); outline-offset: 2px; }
+
+        /* -------------------------------------------
+           1. Main Header
+        ------------------------------------------- */
+        #main-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(45, 58, 36, 0.08);
+            transition: box-shadow var(--transition-fast);
+            width: 100%;
+        }
+        #main-header.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: var(--header-height-desktop);
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* -------------------------------------------
+           2. Logo & Navigation
+        ------------------------------------------- */
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .site-logo {
+            max-height: 68px; /* [CHANGE] logo bada - naam saaf dikhe */
+            width: auto;
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            flex: 1;
+            justify-content: center;
+        }
+        
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--c-forest);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 8px 0;
+            transition: color var(--transition-fast);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--c-orange-primary);
+            transition: width var(--transition-fast), left var(--transition-fast);
+        }
+        .nav-link:hover { color: var(--c-orange-primary); }
+        .nav-link:hover::after { width: 100%; left: 0; }
+
+        .mobile-menu-extras { display: none; }
+        .mobile-menu-extras i { width: 22px; text-align: center; margin-right: 12px; color: var(--c-orange-primary); }
+
+        /* -------------------------------------------
+           3. Action Icons & Cart Badge
+        ------------------------------------------- */
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            z-index: 10;
+        }
+        
+        .icon-link {
+            color: var(--c-forest);
+            font-size: 1.3rem;
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .icon-link:hover {
+            color: var(--c-orange-primary);
+            transform: scale(1.08);
+        }
+
+        .cart-count-badge {
+            background-color: var(--c-orange-primary);
+            color: var(--c-white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            height: 18px;
+            min-width: 18px;
+            border-radius: 99px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            padding: 0 5px;
+            box-shadow: 0 2px 5px rgba(85, 112, 61, 0.4);
+            border: 2px solid var(--c-white);
+        }
+
+        .mobile-menu-btn { display: none; }
+
+        /* -------------------------------------------
+           4. Mobile Search Overlay
+        ------------------------------------------- */
+        .mobile-search-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(250, 246, 240, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .mobile-search-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-search-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+        .close-search {
+            background: none;
+            border: none;
+            font-size: 2.2rem;
+            color: var(--c-forest);
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        .close-search:hover { color: var(--c-orange-primary); }
+        
+        .mobile-search-form {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--c-forest);
+            padding-bottom: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        .mobile-search-overlay.active .mobile-search-form { transform: translateY(0); }
+        
+        .mobile-search-input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-family: 'Playfair Display', serif;
+            color: var(--c-forest);
+            outline: none;
+            padding: 8px 0;
+        }
+        .mobile-search-input::placeholder { color: var(--c-gray-600); opacity: 0.5; }
+        .mobile-search-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--c-forest);
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        .mobile-search-btn:hover { color: var(--c-orange-primary); }
+
+        /* -------------------------------------------
+           5. Responsive Mobile Layout & Side Drawer
+        ------------------------------------------- */
+        @media (max-width: 991px) {
+            .header-container {
+                height: var(--header-height-mobile);
+                padding: 0 16px;
+            }
+
+            .header-left { gap: 10px; }
+
+            .mobile-menu-btn {
+                display: flex;
+                align-items: center;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                color: var(--c-forest);
+                cursor: pointer;
+                padding: 6px 10px 6px 0;
+            }
+
+            .site-logo { max-height: 54px; }
+            .desktop-only { display: none !important; }
+
+            #main-header {
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                background-color: var(--c-white);
+            }
+
+            .mobile-menu-backdrop {
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background: rgba(0, 0, 0, 0.65); 
+                z-index: 999;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease;
+            }
+            .mobile-menu-backdrop.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-menu {
+                position: fixed !important;
+                top: 0;
+                left: 0; 
+                width: 80vw !important;
+                max-width: 320px;
+                height: 100vh; 
+                height: 100dvh;
+                background-color: var(--c-cream) !important; 
+                z-index: 1002; 
+                display: flex !important; 
+                flex-direction: column !important;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 80px 24px 40px;
+                transform: translateX(-100%); 
+                transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+                box-shadow: 4px 0 25px rgba(0,0,0,0.1);
+                overflow-y: auto;
+            }
+            .nav-menu.active {
+                transform: translateX(0) !important; 
+            }
+
+            .close-menu-btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: none;
+                border: none;
+                font-size: 2.2rem;
+                color: var(--c-forest);
+                cursor: pointer;
+                padding: 5px;
+                z-index: 1003;
+            }
+
+            .nav-link {
+                font-size: 1.15rem;
+                width: 100%;
+                padding: 16px 0;
+                border-bottom: 1px solid rgba(45, 58, 36, 0.08);
+            }
+            .nav-link::after { display: none; }
+
+            .mobile-menu-extras {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+                padding-top: 15px;
+                gap: 8px;
+            }
+            .mobile-menu-extras .nav-link {
+                border-bottom: none;
+                font-size: 1.1rem;
+                padding: 12px 0;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .mobile-menu-backdrop, .close-menu-btn { display: none !important; }
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '1098034349243288'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=1098034349243288&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+<!-- Backdrop layer -->
+<div class="mobile-menu-backdrop" id="mobile-menu-backdrop" aria-hidden="true"></div>
+
+<!-- Mobile Search Overlay Modal -->
+<div class="mobile-search-overlay" id="mobile-search-overlay" aria-hidden="true" role="dialog">
+    <div class="mobile-search-header">
+        <button class="close-search" id="close-search-btn" aria-label="Close Search">&times;</button>
+    </div>
+    <form class="mobile-search-form" action="/shop.php" method="GET">
+        <input type="text" name="q" class="mobile-search-input" placeholder="Search syrup, soap, powder..." required aria-label="Search input" autocomplete="off" data-hk-suggest="overlay">
+        <button type="submit" class="mobile-search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+    </form>
+    <!-- [NEW] Live search suggestions -->
+    <div class="hk-suggest-box" id="hk-suggest-overlay" role="listbox" aria-label="Search suggestions"></div>
+</div>
+
+<!-- Main Header -->
+<header class="header" id="main-header">
+    
+    <!-- Navigation Area -->
+    <div class="header-container">
+        
+        <!-- Left Section -->
+        <div class="header-left">
+            <button class="mobile-menu-btn" id="mobile-drawer-btn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.php" class="logo-link" aria-label="Go to homepage">
+                <img src="/assets/logo.png" alt="The Hakiman" class="site-logo">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation & Mobile Menu Content -->
+        <nav class="nav-menu" id="mobile-nav-drawer" aria-label="Main Navigation">
+            <button class="close-menu-btn" id="close-menu-btn" aria-label="Close menu">&times;</button>
+            
+            <a href="index.php" class="nav-link">Home</a>
+            <a href="shop.php" class="nav-link">Shop</a>
+            <!-- [NEW] Categories dropdown (desktop hover / mobile tap) -->
+            <div class="nav-dropdown" id="nav-cat-dropdown">
+                <a href="category.php" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Categories <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+                <div class="nav-dropdown-menu" role="menu">
+                                            <a href="shop.php?category=2" class="nav-dropdown-item" role="menuitem">
+                            <span>Powder</span>
+                            <small>1</small>
+                        </a>
+                                            <a href="shop.php?category=1" class="nav-dropdown-item" role="menuitem">
+                            <span>Soap</span>
+                            <small>3</small>
+                        </a>
+                                            <a href="shop.php?category=3" class="nav-dropdown-item" role="menuitem">
+                            <span>Syrup</span>
+                            <small>2</small>
+                        </a>
+                                            <a href="shop.php?category=4" class="nav-dropdown-item" role="menuitem">
+                            <span>Tablet</span>
+                            <small>2</small>
+                        </a>
+                                        <a href="category.php" class="nav-dropdown-item nav-dropdown-all" role="menuitem"><span>View All Categories</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="about.php" class="nav-link">Our Heritage</a>
+            
+            <!-- Utility Links Moved to Menu for Mobile -->
+            <div class="mobile-menu-extras">
+                <a href="#" class="nav-link trigger-search"><i class="fas fa-search"></i> Search</a>
+                <a href="wishlist.php" class="nav-link"><i class="far fa-heart"></i> Wishlist <span class="wishlist-count-inline wishlist-count-badge" data-count="0" hidden>0</span></a>
+                
+                <!-- NEW LOGIN/LOGOUT LOGIC FOR MOBILE MENU -->
+                                    <a href="login.php" class="nav-link"><i class="far fa-user"></i> Login / Register</a>
+                            </div>
+        </nav>
+
+        <!-- Utility Icons (Right Side) -->
+        <div class="header-icons">
+            <button type="button" class="icon-link trigger-search" aria-label="Open Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <!-- [NEW] Wishlist icon har screen par + count badge -->
+            <a href="wishlist.php" class="icon-link icon-wishlist" aria-label="Wishlist" title="Wishlist">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="wishlist-count-badge" hidden>0</span>
+            </a>
+            
+            <!-- NEW LOGIN/LOGOUT LOGIC FOR DESKTOP ICONS -->
+            <!-- [CHANGE] Login / Account / Logout icons saaf alag-alag -->
+                            <a href="login.php" class="icon-link icon-login desktop-only" aria-label="Login / Register" title="Login / Register">
+                    <i class="far fa-user" aria-hidden="true"></i><span class="icon-label">Login</span>
+                </a>
+                        
+            <a href="cart.php" class="icon-link" aria-label="Shopping Cart">
+                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                <span class="cart-count-badge">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // ==========================================
+    // 1. MOBILE SIDE-DRAWER LOGIC 
+    // ==========================================
+    const mobileMenuBtn = document.getElementById('mobile-drawer-btn');
+    const navMenu = document.getElementById('mobile-nav-drawer');
+    const menuBackdrop = document.getElementById('mobile-menu-backdrop');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+
+    function openMobileMenu() {
+        navMenu.classList.add('active');
+        menuBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeMobileMenu() {
+        navMenu.classList.remove('active');
+        menuBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+    if (menuBackdrop) menuBackdrop.addEventListener('click', closeMobileMenu);
+
+    
+    // ==========================================
+    // 2. SEARCH OVERLAY LOGIC
+    // ==========================================
+    const searchBtns = document.querySelectorAll('.trigger-search');
+    const closeSearchBtn = document.getElementById('close-search-btn');
+    const searchOverlay = document.getElementById('mobile-search-overlay');
+    const searchInput = document.querySelector('.mobile-search-input');
+
+    searchBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (navMenu && navMenu.classList.contains('active')) closeMobileMenu();
+            
+            searchOverlay.classList.add('active');
+            searchOverlay.setAttribute('aria-hidden', 'false');
+            setTimeout(() => searchInput.focus(), 300);
+        });
+    });
+
+    if (closeSearchBtn) {
+        closeSearchBtn.addEventListener('click', () => {
+            searchOverlay.classList.remove('active');
+            searchOverlay.setAttribute('aria-hidden', 'true');
+        });
+    }
+
+    // Close overlays on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (searchOverlay.classList.contains('active')) {
+                searchOverlay.classList.remove('active');
+                searchOverlay.setAttribute('aria-hidden', 'true');
+            }
+            if (navMenu && navMenu.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        }
+    });
+
+    // ==========================================
+    // 3. HEADER SCROLL SHADOW
+    // ==========================================
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+});
+</script>
+<style>
+    /* ========================================================
+       PREMIUM MODERN THEME VARIABLES (Matched with index.php)
+       ======================================================== */
+    :root {
+        --c-cream: #F6F5EE; 
+        --c-white: #FFFFFF;
+        --c-tint: #EEF2E5; 
+        --c-card-bg: #F9F9F9;
+        
+        --c-orange-primary: #55703D; 
+        --c-orange-dark: #3D5229;
+        --c-forest: #2D3A24; 
+        --c-maroon: #7B1818;
+
+        --font-serif: 'Playfair Display', serif;
+        --font-sans: 'Jost', sans-serif;
+        
+        /* Optimized & Compact Typography */
+        --text-sm: clamp(0.75rem, 1vw + 0.3rem, 0.85rem);
+        --text-base: clamp(0.9rem, 1vw + 0.3rem, 1rem);
+        --text-lg: clamp(1.05rem, 1.2vw + 0.4rem, 1.15rem);
+        --text-xl: clamp(1.4rem, 2vw + 0.5rem, 1.7rem);
+        --text-2xl: clamp(1.6rem, 3vw + 0.5rem, 2rem);
+
+        --transition-smooth: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* -------------------------------------------
+       GLOBAL FIXES FOR OVERFLOW & BOX SIZING
+    ------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--c-cream);
+        color: var(--c-forest);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    /* -------------------------------------------
+       1. Shop Section & Filter Bar
+    ------------------------------------------- */
+    .shop-section {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .shop-filter-bar {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin-bottom: 30px; 
+        padding: 15px 20px; 
+        background: var(--c-white); 
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+        font-family: var(--font-sans);
+    }
+
+    .shop-filter-bar select {
+        padding: 8px 16px;
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 99px;
+        background-color: var(--c-white);
+        color: var(--c-forest);
+        font-family: var(--font-sans);
+        font-size: 0.9rem;
+        font-weight: 500;
+        outline: none;
+        cursor: pointer;
+        transition: border-color var(--transition-smooth);
+    }
+    
+    .shop-filter-bar select:hover {
+        border-color: var(--c-orange-primary);
+    }
+
+    /* -------------------------------------------
+       2. Product Grid (Exact Match to Index)
+    ------------------------------------------- */
+    .product-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+        gap: 24px; 
+        width: 100%;
+    }
+    
+    .product-card {
+        background: var(--c-card-bg); 
+        border: 1px solid rgba(0,0,0,0.03); 
+        border-radius: 12px; 
+        padding: 15px; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+        transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+        position: relative; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: left;
+        height: 100%;
+        text-decoration: none;
+    }
+    
+    .product-card:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); 
+    }
+    
+    /* Discount Badge */
+    .product-badge {
+        position: absolute; 
+        top: 15px; 
+        left: 15px; 
+        background: var(--c-maroon); 
+        color: var(--c-white);
+        font-family: var(--font-sans); 
+        font-size: 0.75rem; 
+        font-weight: 500; 
+        padding: 4px 10px; 
+        border-radius: 99px; 
+        z-index: 2;
+    }
+    
+    /* Wishlist Heart */
+    .wishlist-btn-overlay {
+        position: absolute; 
+        top: 15px; 
+        right: 15px; 
+        width: 32px; 
+        height: 32px;
+        background: var(--c-white); 
+        border: none;
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        color: #999; 
+        z-index: 2; 
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 0.95rem;
+    }
+    .wishlist-btn-overlay:hover { color: var(--c-maroon); transform: scale(1.1); }
+
+    .product-img-wrap {
+        position: relative; 
+        width: 100%; 
+        padding-top: 100%; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        background: transparent; 
+        margin-bottom: 15px; 
+        display: block;
+    }
+    
+    .product-img-wrap img { 
+        position: absolute; 
+        top: 0; left: 0; width: 100%; height: 100%; 
+        object-fit: cover; transition: transform var(--transition-smooth); 
+    }
+    
+    .product-card:hover .product-img-wrap img { transform: scale(1.03); }
+    
+    .product-info { display: flex; flex-direction: column; flex-grow: 1; }
+    
+    .product-brand { 
+        font-size: 0.75rem; color: #888; text-transform: uppercase; 
+        letter-spacing: 0.5px; margin-bottom: 5px; font-weight: 500; 
+    }
+    
+    .product-title { 
+        font-family: var(--font-serif); 
+        font-size: 1.1rem; 
+        color: var(--c-forest); 
+        text-decoration: none; 
+        margin-bottom: 15px; 
+        font-weight: 600; 
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 2.8em;
+    }
+    
+    .product-meta { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+    .product-price-wrap { display: flex; gap: 8px; align-items: center; flex-direction: row; }
+    .price-old { text-decoration: line-through; color: #999; font-size: 0.88rem; font-family: var(--font-sans); }
+    .price-new { color: var(--c-forest); font-weight: 600; font-size: 1.15rem; font-family: var(--font-sans); }
+    
+    /* Cart Button */
+    .btn-grid-cart {
+        width: 38px; height: 38px; border-radius: 50%; background: rgba(85, 112, 61, 0.1);
+        color: var(--c-orange-primary); display: flex; align-items: center; justify-content: center;
+        text-decoration: none; transition: all var(--transition-smooth); font-size: 1rem; border: none; cursor: pointer;
+    }
+    .btn-grid-cart:hover { background: var(--c-orange-primary); color: var(--c-white); transform: scale(1.05); }
+    
+    .btn-grid-cart.disabled {
+        color: #999; background: #eee; cursor: not-allowed; opacity: 0.7;
+    }
+    .btn-grid-cart.disabled:hover { transform: none; background: #eee; color: #999; }
+
+    /* Pagination */
+    .pagination-container a {
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.95rem;
+        transition: all var(--transition-smooth);
+    }
+    .pagination-container a:hover {
+        background-color: var(--c-orange-primary) !important;
+        border-color: var(--c-orange-primary) !important;
+        color: var(--c-white) !important;
+    }
+
+    /* -------------------------------------------
+       3. Features Section (Matched with index grid-4)
+    ------------------------------------------- */
+    .features-section {
+        background-color: var(--c-white);
+        padding: 60px 0;
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .feature-item {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 25px 12px;
+        border-radius: 12px; 
+        transition: all var(--transition-smooth); 
+        background: transparent;
+    }
+
+    .feature-icon-box {
+        width: 54px; 
+        height: 54px; 
+        margin: 0 auto 15px; 
+        background: rgba(85, 112, 61, 0.08);
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        color: var(--c-orange-primary); 
+        font-size: 1.4rem;
+        transition: all var(--transition-smooth);
+    }
+    
+    .feature-item:hover .feature-icon-box {
+        background: rgba(85, 112, 61, 0.15); 
+        transform: scale(1.05);
+    }
+    
+    .feature-item h4 {
+        font-family: var(--font-serif);
+        font-size: 1.1rem;
+        color: var(--c-forest);
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+    .feature-item p {
+        font-size: var(--text-sm);
+        color: var(--c-forest);
+        opacity: 0.85;
+        line-height: 1.4;
+    }
+
+    /* Mobile only Elements Setup */
+    .hide-desktop { display: none; }
+
+    /* -------------------------------------------
+       4. Responsive Design & Mobile Fixes
+    ------------------------------------------- */
+    @media (max-width: 1024px) {
+        .product-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 992px) {
+        /* On tablet, show 4 items but smaller, or keep 4 in a row depending on space */
+        .features-grid { grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    }
+    @media (max-width: 768px) {
+        .hide-desktop { display: flex !important; }
+        .hide-mobile { display: none !important; }
+        
+        .shop-section { padding-top: 20px; padding-bottom: 40px; }
+        .container { padding: 0 16px; }
+        .shop-filter-bar { display: none !important; }
+
+        /* FLIPKART STYLE PROFESSIONAL MOBILE BAR */
+        .mobile-action-bar {
+            display: flex;
+            background: var(--c-white);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            margin-bottom: 20px;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.04);
+            overflow: hidden;
+        }
+        .mobile-action-btn {
+            flex: 1;
+            padding: 12px 10px;
+            background: transparent;
+            border: none;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--c-forest);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        .mobile-action-divider {
+            width: 1px;
+            background: rgba(0,0,0,0.06);
+        }
+
+        /* BOTTOM SHEET MODAL CSS */
+        .sheet-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(3px);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .sheet-overlay.active { opacity: 1; visibility: visible; }
+        
+        .bottom-sheet {
+            position: fixed;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background: var(--c-cream);
+            border-radius: 20px 20px 0 0;
+            z-index: 1001;
+            transition: bottom 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
+            padding-bottom: 25px;
+        }
+        .bottom-sheet.active { bottom: 0; }
+        
+        .sheet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            background: var(--c-white);
+            border-radius: 20px 20px 0 0;
+        }
+        .sheet-header h3 {
+            margin: 0;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: var(--c-forest);
+            font-weight: 600;
+        }
+        .sheet-close {
+            background: transparent;
+            border: none;
+            font-size: 1.4rem;
+            color: var(--c-forest);
+            opacity: 0.6;
+            cursor: pointer;
+            padding: 0;
+        }
+        .sheet-body {
+            padding: 5px 20px;
+            max-height: 50vh;
+            overflow-y: auto;
+            background: var(--c-cream);
+        }
+        .sheet-opt {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            color: var(--c-forest);
+            opacity: 0.8;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .sheet-opt:last-child { border-bottom: none; }
+        .sheet-opt.active {
+            color: var(--c-orange-primary);
+            font-weight: 600;
+            opacity: 1;
+        }
+        .sheet-opt.active::after {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--c-orange-primary);
+            font-size: 1rem;
+        }
+
+        /* PRODUCT GRID ADJUSTMENTS FOR MOBILE */
+        .product-grid { 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px; margin-top: 0;
+        }
+        .product-card { padding: 10px; border-radius: 10px; }
+        .product-badge { top: 10px; left: 10px; font-size: 0.65rem; padding: 3px 6px; }
+        .wishlist-btn-overlay { width: 28px; height: 28px; font-size: 0.8rem; top: 10px; right: 10px; }
+        .product-img-wrap { margin-bottom: 10px; border-radius: 8px; }
+        .product-title { font-size: 0.95rem; min-height: 2.7em; margin-bottom: 10px; line-height: 1.35; }
+        .product-brand { font-size: 0.65rem; margin-bottom: 3px; }
+        .price-new { font-size: 0.95rem; }
+        .price-old { font-size: 0.8rem; }
+        .btn-grid-cart { width: 32px !important; height: 32px !important; font-size: 0.85rem !important; }
+
+        /* ========================================================
+           FEATURES GRID 1x4 (ALL 4 IN ONE LINE FOR MOBILE)
+           ======================================================== */
+        .features-section { padding: 30px 0; }
+        .features-grid { 
+            grid-template-columns: repeat(4, 1fr); /* Forces 4 items in a single row */
+            gap: 4px; /* Reduced gap to fit nicely */
+            width: 100%; 
+        }
+        .feature-item { 
+            padding: 5px; 
+            border-radius: 8px; 
+            justify-content: flex-start; 
+        }
+        .feature-icon-box { 
+            width: 38px; /* Slightly smaller for mobile */
+            height: 38px; 
+            margin-bottom: 6px; 
+            font-size: 1rem; 
+        }
+        .feature-item h4 { 
+            font-size: 10px; /* Small font to fit without breaking line awkwardly */
+            margin-bottom: 4px; 
+            line-height: 1.2; 
+        }
+        .feature-item p { 
+            display: none; /* Hide paragraph on mobile to match the index page design */
+        }
+    }
+</style>
+
+<section class="shop-section">
+    <div class="container">
+
+        <!-- DESKTOP FILTER BAR (Hidden on Mobile) -->
+        <div class="shop-filter-bar hide-mobile">
+            <p style="margin: 0; color: var(--c-forest); opacity: 0.8; font-weight: 500; font-size: 0.95rem;">
+                Showing 1–1 of 1 results
+            </p>
+            <form method="GET" action="shop.php" style="display:flex; gap:12px; align-items: center;">
+                                                
+                <select name="category" onchange="this.form.submit()">
+                    <option value="">All Categories</option>
+                                            <option value="2" selected>
+                            Powder                        </option>
+                                            <option value="1" >
+                            Soap                        </option>
+                                            <option value="3" >
+                            Syrup                        </option>
+                                            <option value="4" >
+                            Tablet                        </option>
+                                    </select>
+
+                <select name="sort" onchange="this.form.submit()">
+                    <option value="default" selected>Default Sorting</option>
+                    <option value="newest" >Newest Arrivals</option>
+                    <option value="price_low" >Price: Low to High</option>
+                    <option value="price_high" >Price: High to Low</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- NEW FLIPKART STYLE MOBILE ACTION BAR (Hidden on Desktop) -->
+        <div class="mobile-action-bar hide-desktop">
+            <button type="button" class="mobile-action-btn" onclick="openSheet('sortSheet')">
+                <i class="fas fa-sort-amount-down"></i> Sort
+            </button>
+            <div class="mobile-action-divider"></div>
+            <button type="button" class="mobile-action-btn" onclick="openSheet('filterSheet')">
+                <i class="fas fa-filter"></i> Filter
+            </button>
+        </div>
+
+        <!-- [NEW] Category + Tag chips (Soap / Syrup / Best Seller ...) -->
+                <div class="hk-chip-row hk-chip-left" aria-label="Categories">
+            <a href="shop.php" class="hk-chip"><i class="fas fa-th-large" aria-hidden="true"></i> All</a>
+                            <a href="shop.php?category=2" class="hk-chip active">Powder</a>
+                            <a href="shop.php?category=1" class="hk-chip">Soap</a>
+                            <a href="shop.php?category=3" class="hk-chip">Syrup</a>
+                            <a href="shop.php?category=4" class="hk-chip">Tablet</a>
+                    </div>
+                        <div class="hk-chip-row hk-chip-left" aria-label="Collections">
+                            <a href="shop.php?category=2&amp;tag=bestseller" class="hk-chip"><i class="fas fa-crown" aria-hidden="true"></i> Best Sellers</a>
+                    </div>
+        
+        <div class="product-grid">
+                        
+                                    <article class="product-card">
+                                    <span class="product-badge">25% OFF</span>
+                
+                <button type="button" class="wishlist-btn-overlay" data-wishlist-toggle data-wishlist-id="11" aria-label="Add to Wishlist" aria-pressed="false">
+                    <i class="far fa-heart"></i>
+                </button>
+
+                
+                <a href="product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="product-img-wrap" aria-label="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt">
+                    <img src="/assets/uploads/products/thumb_6aa2766a3de89.png" alt="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt" loading="lazy">
+                    <span class="hk-tag-badge hk-tag-bestseller hk-card-tag"><i class="fas fa-crown" aria-hidden="true"></i> Best Seller</span>                </a>
+
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="product-title" title="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt">
+                        PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt                    </a>
+
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹695</span>
+                                                        <span class="price-new">₹522</span>
+                                                            <span class="hk-card-save">Save ₹173</span>
+                                                    </div>
+
+                                                    <a href="product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="btn-grid-cart" aria-label="View Product">
+                                <i class="fas fa-shopping-bag"></i>
+                            </a>
+                                            </div>
+                </div>
+            </article>
+                    </div>
+
+            </div>
+</section>
+
+<!-- BOTTOM SHEETS FOR MOBILE -->
+<div class="sheet-overlay hide-desktop" id="sheetOverlay" onclick="closeSheets()"></div>
+
+<!-- 1. Sort Sheet -->
+<div class="bottom-sheet hide-desktop" id="sortSheet">
+    <div class="sheet-header">
+        <h3>Sort By</h3>
+        <button class="sheet-close" onclick="closeSheets()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sheet-body">
+        <a href="?category=2" class="sheet-opt active">Recommended</a>
+        <a href="?category=2&sort=newest" class="sheet-opt ">Newest Arrivals</a>
+        <a href="?category=2&sort=price_low" class="sheet-opt ">Price (Low to High)</a>
+        <a href="?category=2&sort=price_high" class="sheet-opt ">Price (High to Low)</a>
+    </div>
+</div>
+
+<!-- 2. Filter / Category Sheet -->
+<div class="bottom-sheet hide-desktop" id="filterSheet">
+    <div class="sheet-header">
+        <h3>Categories</h3>
+        <button class="sheet-close" onclick="closeSheets()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sheet-body">
+        <a href="?" class="sheet-opt ">All Categories</a>
+                    <a href="?category=2" class="sheet-opt active">
+                Powder            </a>
+                    <a href="?category=1" class="sheet-opt ">
+                Soap            </a>
+                    <a href="?category=3" class="sheet-opt ">
+                Syrup            </a>
+                    <a href="?category=4" class="sheet-opt ">
+                Tablet            </a>
+            </div>
+</div>
+<!-- END BOTTOM SHEETS -->
+
+<!-- The Hakiman Difference Section (Matched with index grid-4 style) -->
+<section class="features-section">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon-box"><i class="fas fa-leaf"></i></div>
+                <h4>100% Toxin-Free</h4>
+                <p>Formulated without harsh chemicals or parabens. Pure care.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-box"><i class="fas fa-vial"></i></div>
+                <h4>Lab-Tested</h4>
+                <p>Rigorously tested for purity and optimal potency.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-box"><i class="fas fa-headset"></i></div>
+                <h4>24/7 Support</h4>
+                <p>Advisors available around the clock for you.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-box"><i class="fas fa-recycle"></i></div>
+                <h4>Sustainable</h4>
+                <p>Ethically sourced raw herbs & eco-friendly packaging.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Check if user is logged in
+const isLoggedIn = false;
+
+// [CHANGE] Wishlist ab bina login bhi chalta hai (login ke baad account me save ho jati hai),
+// heart button bhar jata hai aur header me count dikhta hai. Click: hakiman.js (data-wishlist-toggle)
+function toggleWishlist(event, id) {
+    if (event) { event.preventDefault(); event.stopPropagation(); }
+    if (window.HK && HK.toggleWishlist) { HK.toggleWishlist(event ? event.currentTarget : null, id); }
+}
+
+// BOTTOM SHEET LOGIC FOR MOBILE
+function openSheet(sheetId) {
+    document.getElementById('sheetOverlay').classList.add('active');
+    document.getElementById(sheetId).classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeSheets() {
+    document.getElementById('sheetOverlay').classList.remove('active');
+    document.querySelectorAll('.bottom-sheet').forEach(sheet => sheet.classList.remove('active'));
+    document.body.style.overflow = ''; // Restore scrolling
+}
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <!-- Brand & About (Image Logo With White Background) -->
+            <div class="footer-brand">
+                <a href="index.php" style="text-decoration: none; display: inline-block; margin-bottom: 20px;">
+                    <img src="/assets/logo.png" alt="The Hakiman" class="footer-logo">
+                </a>
+                <p class="footer-text">Premium Ayurvedic &amp; Unani remedies and holistic wellness solutions crafted with generations of healing wisdom since 1953.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-widget">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="about.php">Our Heritage</a>
+                    <a href="shop.php">Shop All</a>
+                    <a href="blog.php">Journal</a>
+                    <a href="faq.php">FAQ</a>
+                    <a href="contact.php">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Customer Care -->
+            <div class="footer-widget">
+                <h4 class="footer-title">Customer Care</h4>
+                <div class="footer-links">
+                    <a href="my-account.php">My Account</a>
+                    <a href="shipping-policy.php">Shipping Policy</a>
+                    <a href="refund-policy.php">Returns &amp; Refunds</a>
+                    <a href="privacy-policy.php">Privacy Policy</a>
+                    <a href="terms-and-conditions.php">Terms &amp; Conditions</a>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-widget">
+                <h4 class="footer-title">Location</h4>
+                <div class="footer-contact-wrapper" style="margin-top: 1.5rem;">
+                    <p class="footer-text footer-contact-item"><i class="fas fa-map-marker-alt"></i> 293/640/293/192, Shop No 2 UGF Aishbagh Rd, Lucknow - 226003</p>
+                    <p class="footer-text footer-contact-item"><i class="fas fa-phone"></i> +91 8881116681</p>
+                    <p class="footer-text footer-contact-item last"><i class="fas fa-envelope"></i> hakimanremedies@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Hakiman. All rights reserved.</p>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-google-pay"></i>
+                <i class="fab fa-apple-pay"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- GLOBAL MOBILE FLOATING CTA -->
+<div class="global-mobile-cta" id="global-mobile-cta">
+    <img src="/assets/mob.footer.png" alt="Pashoya Pain Salt" class="gm-cta-img">
+    <div class="gm-cta-title">Pashoya Pain Salt</div>
+    <a href="https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="gm-cta-btn">Buy Now</a>
+</div>
+
+<!-- Footer CSS -->
+<style>
+    /* -------------------------------------------
+       Footer Redesign
+    ------------------------------------------- */
+    .footer {
+        background-color: var(--c-forest);
+        color: var(--c-cream);
+        padding: 70px 0 20px;
+        font-family: var(--font-sans);
+        border-top: 1px solid rgba(250, 246, 240, 0.1);
+    }
+    
+    .footer-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    /* Fixed Logo Styling: Added White Background */
+    .footer-logo {
+        max-width: 180px;
+        max-height: 70px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        background-color: #ffffff; /* White background added */
+        padding: 10px 15px; /* Spacing around the logo */
+        border-radius: 8px; /* Smooth rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow for 3D effect */
+    }
+
+    .footer-title {
+        font-family: var(--font-serif);
+        font-size: 1.3rem;
+        color: var(--c-cream) !important;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    .footer-text {
+        color: var(--c-cream) !important;
+        opacity: 0.85;
+        line-height: 1.7;
+        font-size: 0.95rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        color: var(--c-cream);
+        text-decoration: none;
+        opacity: 0.85;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+        width: fit-content;
+    }
+    
+    .footer-links a:hover {
+        color: var(--c-orange-primary);
+        opacity: 1;
+        transform: translateX(5px);
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(250, 246, 240, 0.1);
+        color: var(--c-cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        background-color: var(--c-orange-primary);
+        color: var(--c-white);
+        transform: translateY(-3px);
+    }
+
+    .footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-contact-item i {
+        color: var(--c-orange-primary) !important;
+        margin-top: 5px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        border-top: 1px solid rgba(250, 246, 240, 0.15);
+    }
+
+    .footer-bottom p {
+        color: var(--c-cream);
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+
+    .payment-icons {
+        display: flex;
+        gap: 15px;
+        font-size: 1.5rem;
+        color: var(--c-cream);
+        opacity: 0.7;
+    }
+
+    /* -------------------------------------------
+       GLOBAL MOBILE FLOATING CTA CSS
+    ------------------------------------------- */
+    .global-mobile-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(250, 246, 240, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 8px 15px 8px 5px; /* Less padding on left to push image to edge */
+        box-shadow: 0 -3px 15px rgba(0,0,0,0.08);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+        transform: translateY(100%);
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        border-top: 1px solid rgba(45, 58, 36, 0.05);
+    }
+
+    .global-mobile-cta.visible {
+        transform: translateY(0);
+    }
+
+    .gm-cta-img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .gm-cta-title {
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: var(--c-forest);
+        font-family: var(--font-sans);
+        flex: 1;
+        padding: 0 10px;
+        line-height: 1.2;
+    }
+
+    .gm-cta-btn {
+        background: var(--c-orange-primary, #55703D);
+        color: #ffffff !important;
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 10px 18px;
+        border-radius: 99px;
+        text-decoration: none;
+        white-space: nowrap;
+        box-shadow: 0 4px 10px rgba(85, 112, 61, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .gm-cta-btn:hover {
+        background: var(--c-orange-dark, #3D5229);
+        transform: scale(1.02);
+    }
+
+    /* Hide on Desktop */
+    @media (min-width: 769px) {
+        .global-mobile-cta {
+            display: none !important;
+        }
+    }
+
+    /* Mobile Responsiveness for Footer */
+    @media (max-width: 991px) {
+        .footer-top {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            padding: 50px 0 20px;
+        }
+        
+        .footer-top {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .footer-bottom {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            margin-bottom: 75px; /* Space for Mobile CTA */
+        }
+    }
+</style>
+
+<script>
+    // Global Mobile Floating CTA Visibility Logic
+    document.addEventListener("DOMContentLoaded", function() {
+        const globalMobileCta = document.getElementById('global-mobile-cta');
+        if (globalMobileCta) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) { 
+                    globalMobileCta.classList.add('visible'); 
+                } else { 
+                    globalMobileCta.classList.remove('visible'); 
+                }
+            }, { passive: true });
+        }
+    });
+</script>
+
+<!-- [NEW] Global: badges, wishlist, live search, categories menu, state/city autocomplete -->
+<script src="/assets/js/hakiman.js?v=4"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

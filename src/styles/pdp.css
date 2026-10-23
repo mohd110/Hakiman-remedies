@@ -1,0 +1,21 @@
+/* ───────── Product page ─────────
+   The page is built from an inline-styled design file. Inside .hk-pdp the
+   site-wide resets (border-box, Fraunces headings, paragraph margins…) are
+   rolled back to browser defaults — the ground that design was drawn on.
+   SVGs are skipped so their presentation attributes keep working. */
+.hk-pdp { line-height: normal; font-size: 16px; }
+.hk-pdp :where(*:not(svg, svg *)) { all: revert; }
+
+/* The design file's own base styles */
+.hk-pdp a { color: #8A3A0C; }
+.hk-pdp a:hover { color: #5E2607; }
+.hk-pdp summary { cursor: pointer; list-style: none; }
+.hk-pdp summary::-webkit-details-marker { display: none; }
+.hk-pdp details[open] .hk-plus { transform: rotate(45deg); }
+
+.hk-pdp :focus-visible { outline: 2px solid #B9470C; outline-offset: 2px; }
+
+/* Mobile swipe gallery */
+.hk-pdp .hk-swipe { scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.hk-pdp .hk-swipe::-webkit-scrollbar { display: none; }
+.hk-pdp .hk-swipe > * { scroll-snap-align: start; scroll-margin-left: 16px; }

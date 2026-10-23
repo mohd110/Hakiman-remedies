@@ -1,0 +1,565 @@
+[
+  {
+    "id": "hk-10",
+    "sourceId": 10,
+    "handle": "advanced-ayurvedic-piles-care-capsules",
+    "title": "Piloman Advanced Ayurvedic Piles Care Capsules",
+    "description": [
+      "Piloman Advanced Ayurvedic Piles Care Capsules combines traditional Ayurvedic herbal ingredients to support digestive wellness and comfortable bowel function. The formulation is presented as a natural approach to maintaining digestive health and supporting overall comfort."
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Supports healthy digestion",
+      "Supports regular bowel movement",
+      "Helps maintain gut wellness",
+      "Supports everyday digestive comfort",
+      "Ayurvedic herbal formulation",
+      "Convenient 30-capsule pack"
+    ],
+    "price": 360.0,
+    "compareAtPrice": 450.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6aa84af69769e.png",
+      "/assets/uploads/products/gallery/gal_6aa84af6999e7_1789414134_0.png",
+      "/assets/uploads/products/gallery/gal_6aa84af699fb7_1789414134_1.png",
+      "/assets/uploads/products/gallery/gal_6aa84af69a53d_1789414134_2.png"
+    ],
+    "highlights": [
+      {
+        "title": "Care Naturally",
+        "text": "For a Comfortable You",
+        "image": "/assets/uploads/products/banner_1_6aa84af697c8b.png"
+      },
+      {
+        "title": "Supports Healthy Digestion",
+        "text": "A Natural Approach to Gut Wellness",
+        "image": "/assets/uploads/products/banner_2_6aa84af69819a.png"
+      },
+      {
+        "title": "Herbal Formula",
+        "text": "Powerful Herbs for Piles Care",
+        "image": "/assets/uploads/products/banner_3_6aa84af69869b.png"
+      },
+      {
+        "title": "Freedom from Piles Discomfort",
+        "text": "Natural Care • Lasting Comfort",
+        "image": "/assets/uploads/products/banner_4_6aa84af698b62.png"
+      }
+    ],
+    "category": "Tablet",
+    "badge": null,
+    "sku": "01",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-10-default",
+        "title": "Default",
+        "price": 360.0,
+        "compareAtPrice": 450.0,
+        "sku": "01"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=advanced-ayurvedic-piles-care-capsules",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-23",
+    "sourceId": 23,
+    "handle": "cystorita-syrup",
+    "title": "Cystorita Syrup",
+    "description": [
+      "ystorita Syrup is a traditional Ayurvedic herbal formulation created to support women’s overall wellness naturally.",
+      "Formulated with selected Ayurvedic herbs including Ashoka, Lodhra, Shatavari and Guduchi, Cystorita provides gentle herbal support for women’s health and wellbeing.",
+      "The formulation is designed to support menstrual wellness, urinary health and digestive comfort while complementing a healthy lifestyle."
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Traditional Ayurvedic herbal formulation",
+      "With natural herbal extracts",
+      "Supports women’s wellness",
+      "Supports menstrual wellness",
+      "Supports urinary health",
+      "Supports digestive comfort",
+      "No added sugar",
+      "200 ml pack"
+    ],
+    "price": 207.0,
+    "compareAtPrice": 230.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6aa84ceeeeb33.png",
+      "/assets/uploads/products/gallery/gal_6aa84ceef06db_1789414638_0.png",
+      "/assets/uploads/products/gallery/gal_6aa84ceef0c76_1789414638_1.png",
+      "/assets/uploads/products/gallery/gal_6aa84ceef11f8_1789414638_2.png"
+    ],
+    "highlights": [
+      {
+        "title": "Ayurvedic Women's Wellness",
+        "text": "Cystorita Syrup provides gentle Ayurvedic support for women's wellness with natural herbal extracts.",
+        "image": "/assets/uploads/products/banner_1_6aa84ceeef17e.png"
+      },
+      {
+        "title": "Natural Care for Women's Wellness",
+        "text": "Traditional Ayurvedic support formulated with natural herbs to support menstrual, urinary and digestive wellness.",
+        "image": "/assets/uploads/products/banner_2_6aa84ceeef831.png"
+      },
+      {
+        "title": "Enriched with Powerful Ayurvedic Ingredients",
+        "text": "Formulated with selected Ayurvedic herbs including Ashoka, Lodhra, Shatavari and Guduchi to support women's wellness naturally.",
+        "image": "/assets/uploads/products/banner_3_6aa84ceeefd0e.png"
+      }
+    ],
+    "category": "Syrup",
+    "badge": null,
+    "sku": "Cystorita-1",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-23-default",
+        "title": "Default",
+        "price": 207.0,
+        "compareAtPrice": 230.0,
+        "sku": "Cystorita-1"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=cystorita-syrup",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-21",
+    "sourceId": 21,
+    "handle": "de-tan-hand-made-soap",
+    "title": "De-Tan Hand Made Soap",
+    "description": [
+      "The Hakiman De-Tan Hand Made Soap is a traditional herbal cleansing soap formulated with Ayurvedic ingredients. It is designed to gently cleanse the skin while supporting a fresh, brighter and healthier-looking appearance.",
+      "Its handmade formulation and herbal positioning make it suitable for everyday bathing and skincare routines."
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Hand made herbal soap",
+      "Turmeric, Neem, Sandalwood & Aloe Vera",
+      "Gentle everyday cleansing",
+      "Helps remove surface impurities",
+      "Leaves skin feeling fresh and clean",
+      "Nature-inspired Ayurvedic care",
+      "Suitable for everyday bathing"
+    ],
+    "price": 257.0,
+    "compareAtPrice": 285.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6a9bdf12d0303.png",
+      "/assets/uploads/products/gallery/gal_6a9bdf12d0bf0_1788600082_0.png",
+      "/assets/uploads/products/gallery/gal_6a9bdf12d1246_1788600082_1.png"
+    ],
+    "highlights": [
+      {
+        "title": "Naturally Brighter, Healthier Skin",
+        "text": "The goodness of Turmeric, Neem, Sandalwood and Aloe Vera for natural everyday skincare.",
+        "image": "/assets/uploads/products/banner_1_6aa85782efb67.png"
+      },
+      {
+        "title": "Natural Care for Brighter Skin",
+        "text": "Ayurvedic-inspired goodness for a fresh, clean and naturally glowing skin feel.",
+        "image": "/assets/uploads/products/banner_2_6aa85782f01ac.png"
+      },
+      {
+        "title": "Clean. Refresh. Glow Naturally.",
+        "text": "A refreshing herbal cleansing experience with nature-inspired care for everyday bathing.",
+        "image": "/assets/uploads/products/banner_3_6aa85782f0787.png"
+      }
+    ],
+    "category": "Soap",
+    "badge": null,
+    "sku": "SKU: HAK-DT-001",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-21-default",
+        "title": "Default",
+        "price": 257.0,
+        "compareAtPrice": 285.0,
+        "sku": "SKU: HAK-DT-001"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=de-tan-hand-made-soap",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-12",
+    "sourceId": 12,
+    "handle": "hakiman-cystorita-advanced-ayurvedic-women-s-health-capsules",
+    "title": "Cystorita Ayurvedic Women’s Health Capsules",
+    "description": [
+      "Cystorita is an Ayurvedic women’s health formulation designed to support hormonal balance, menstrual wellness and overall reproductive wellness. It is formulated for women seeking natural Ayurvedic support as part of their regular wellness routine. Each bottle contains 30 capsules."
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Ayurvedic women’s health capsules",
+      "Supports women’s hormonal wellness",
+      "Supports healthy menstrual cycle",
+      "Supports reproductive wellness",
+      "Helps maintain overall women’s wellness",
+      "30 capsules per bottle",
+      "Natural Ayurvedic formulation"
+    ],
+    "price": 360.0,
+    "compareAtPrice": 450.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6aa848397530a.png",
+      "/assets/uploads/products/gallery/gal_6aa84839780d2_1789413433_0.png",
+      "/assets/uploads/products/gallery/gal_6aa848397883c_1789413433_1.png",
+      "/assets/uploads/products/gallery/gal_6aa8483978f44_1789413433_2.png"
+    ],
+    "highlights": [
+      {
+        "title": "Natural Support for Women’s Wellness",
+        "text": "Ayurvedic support for hormonal balance, menstrual wellness and everyday women’s health.",
+        "image": "/assets/uploads/products/banner_1_6aa84839759cc.png"
+      },
+      {
+        "title": "Balance Naturally, Live Fully",
+        "text": "Traditional Ayurvedic care designed to support women’s wellness and natural balance.",
+        "image": "/assets/uploads/products/banner_2_6aa84839760ba.png"
+      },
+      {
+        "title": "Natural Care for Her Natural Rhythm",
+        "text": "Supports healthy menstrual wellness and helps maintain hormonal balance naturally.",
+        "image": "/assets/uploads/products/banner_3_6aa8483976778.png"
+      },
+      {
+        "title": "Ancient Wisdom for Modern Women",
+        "text": "Ayurvedic women’s health care inspired by traditional herbal wellness.",
+        "image": "/assets/uploads/products/banner_4_6aa8483976ddf.png"
+      }
+    ],
+    "category": "Tablet",
+    "badge": null,
+    "sku": "03",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-12-default",
+        "title": "Default",
+        "price": 360.0,
+        "compareAtPrice": 450.0,
+        "sku": "03"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=hakiman-cystorita-advanced-ayurvedic-women-s-health-capsules",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-13",
+    "sourceId": 13,
+    "handle": "hakiman-fizoliv-ds-syrup-sugar-free-ayurvedic-liver-amp-amp-amp-digestive-care",
+    "title": "Fizoliv DS Syrup",
+    "description": [
+      "Fizoliv DS Syrup is an Ayurvedic herbal formulation designed to provide natural support for healthy liver function and digestive wellness. The product features a herbal-based formula and is presented as a no-added-sugar syrup. Suitable for those looking to include traditional Ayurvedic care as part of their wellness routine."
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Ayurvedic herbal formulation for healthy liver support",
+      "Supports healthy liver function",
+      "Supports digestive wellness",
+      "Made with a traditional Ayurvedic formula",
+      "No added sugar",
+      "Suitable for everyday wellness support"
+    ],
+    "price": 213.0,
+    "compareAtPrice": 237.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6aa846218e3be.jpeg",
+      "/assets/uploads/products/gallery/gal_6aa846218f73b_1789412897_0.png",
+      "/assets/uploads/products/gallery/gal_6aa846218fcb3_1789412897_1.png"
+    ],
+    "highlights": [
+      {
+        "title": "Natural Support for a Healthy Liver",
+        "text": "Ayurvedic herbal support for maintaining healthy liver function and overall wellness.",
+        "image": "/assets/uploads/products/banner_1_6aa846218e6d1.png"
+      },
+      {
+        "title": "Supports Healthy Liver Function",
+        "text": "A traditional Ayurvedic formula designed to support liver wellness naturally.",
+        "image": "/assets/uploads/products/banner_2_6aa846218ebd8.png"
+      },
+      {
+        "title": "Goodness of Natural Herbs",
+        "text": "Ayurvedic care combining herbal wellness with everyday liver support.",
+        "image": "/assets/uploads/products/banner_3_6aa84671abc4f.png"
+      }
+    ],
+    "category": "Syrup",
+    "badge": null,
+    "sku": "04",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-13-default",
+        "title": "Default",
+        "price": 213.0,
+        "compareAtPrice": 237.0,
+        "sku": "04"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=hakiman-fizoliv-ds-syrup-sugar-free-ayurvedic-liver-amp-amp-amp-digestive-care",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-24",
+    "sourceId": 24,
+    "handle": "haldi-chandan-hand-made-soap-1",
+    "title": "Haldi Chandan Hand Made Soap",
+    "description": [
+      "The Hakiman Haldi Chandan Hand Made Soap brings the traditional goodness of Ayurveda into your everyday bathing routine.",
+      "Carefully inspired by nature, this handcrafted soap combines Haldi (Turmeric), Chandan (Sandalwood), Aloe Vera and natural oils to provide a refreshing and gentle cleansing experience.",
+      "Haldi is traditionally valued for its skin-brightening properties, Chandan is known for its soothing and refreshing feel, Aloe Vera helps maintain skin moisture, while natural oils provide nourishing care."
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Hand made herbal soap",
+      "Enriched with Haldi and Chandan",
+      "With Aloe Vera and natural oils",
+      "Gentle everyday cleansing",
+      "Helps remove surface impurities",
+      "Helps maintain naturally fresh-looking skin",
+      "Nature-inspired Ayurvedic care",
+      "Suitable for everyday bathing"
+    ],
+    "price": 216.0,
+    "compareAtPrice": 240.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6aa858804d07b.webp",
+      "/assets/uploads/products/gallery/gal_6aa8588b078e0_1789417611_0.webp",
+      "/assets/uploads/products/gallery/gal_6aa8588b07b99_1789417611_1.webp"
+    ],
+    "highlights": [
+      {
+        "title": "Nature’s Best Ingredients for Naturally Glowing Skin",
+        "text": "Pure Ayurvedic care with Haldi, Chandan, Aloe Vera and natural oils for naturally fresh and radiant-looking skin.",
+        "image": "/assets/uploads/products/banner_1_6aa8585f31416.png"
+      },
+      {
+        "title": "Traditional Ayurveda for Naturally Glowing Skin",
+        "text": "Pure ingredients and nature-inspired care for a refreshing everyday bathing experience.",
+        "image": "/assets/uploads/products/banner_2_6aa8585f319e4.png"
+      },
+      {
+        "title": "Natural Glow, Naturally Yours",
+        "text": "Discover the traditional goodness of Haldi and Chandan with Aloe Vera and natural oils.",
+        "image": "/assets/uploads/products/banner_3_6aa8585f3203f.png"
+      }
+    ],
+    "category": "Soap",
+    "badge": null,
+    "sku": "HAK-HALDI-CHANDAN-SOAP",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-24-default",
+        "title": "Default",
+        "price": 216.0,
+        "compareAtPrice": 240.0,
+        "sku": "HAK-HALDI-CHANDAN-SOAP"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=haldi-chandan-hand-made-soap-1",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-22",
+    "sourceId": 22,
+    "handle": "neem-hand-made-soap",
+    "title": "Neem Hand Made Soap",
+    "description": [
+      "The Hakiman Neem Hand Made Soap is a handcrafted herbal cleansing soap inspired by traditional Ayurvedic care.",
+      "Made with the goodness of Neem, this soap is designed for gentle everyday cleansing while helping maintain fresh, clean and healthy-looking skin.",
+      "Its natural herbal positioning makes it suitable for those who prefer a simple, nature-inspired approach"
+    ],
+    "keyBenefits": null,
+    "features": [
+      "Neem-based herbal soap",
+      "Hand made soap",
+      "Natural cleansing",
+      "Gentle on skin",
+      "Ayurvedic-inspired care",
+      "Suitable for everyday cleansing",
+      "Nature-inspired formulation"
+    ],
+    "price": 196.0,
+    "compareAtPrice": 218.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6a9bdf53c3880.jpeg",
+      "/assets/uploads/products/gallery/gal_6a9bdf53c3d90_1788600147_0.jpeg",
+      "/assets/uploads/products/gallery/gal_6a9bdf53c4054_1788600147_1.jpeg",
+      "/assets/uploads/products/gallery/gal_6a9bdf53c41ff_1788600147_2.jpeg"
+    ],
+    "highlights": [
+      {
+        "title": "Natural Care for Healthy Skin",
+        "text": "Handcrafted with the goodness of Neem for naturally clean, fresh and healthy-looking skin.",
+        "image": "/assets/uploads/products/banner_1_6aa856dcdd861.png"
+      },
+      {
+        "title": "Pure Care from Nature",
+        "text": "Natural cleansing and gentle everyday care inspired by the goodness of Neem.",
+        "image": "/assets/uploads/products/banner_2_6aa856dcde01f.png"
+      },
+      {
+        "title": "Natural Care for Naturally Healthy Skin",
+        "text": "A simple herbal cleansing experience with Neem-inspired Ayurvedic care for your everyday skincare routine.",
+        "image": "/assets/uploads/products/banner_3_6aa856dcde737.png"
+      },
+      {
+        "title": "Goodness of Nature",
+        "text": "Pure ingredients, gentle cleansing and nature-inspired Ayurvedic care for everyday skin wellness.",
+        "image": "/assets/uploads/products/banner_4_6aa856dcdecec.png"
+      }
+    ],
+    "category": "Soap",
+    "badge": null,
+    "sku": "HAK-NEEM-SOAP",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-22-default",
+        "title": "Default",
+        "price": 196.0,
+        "compareAtPrice": 218.0,
+        "sku": "HAK-NEEM-SOAP"
+      }
+    ],
+    "ingredients": null,
+    "usageInstructions": null,
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=neem-hand-made-soap",
+    "sourceMaxOrderQty": 100,
+    "availability": "in_stock",
+    "isDemo": false
+  },
+  {
+    "id": "hk-11",
+    "sourceId": 11,
+    "handle": "pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-",
+    "title": "PASHOYA Pain Salt – Joint Support & Natural Body Detox Salt",
+    "description": [
+      "Hakiman PASHOYA Pain Salt is a mineral-rich bath and foot soak blend designed to turn everyday bathing into a relaxing self-care experience. Its carefully selected combination of Epsom Salt, Sajji Khar, Bhind Salt, Java Khar and refreshing essential oils creates a soothing soak for tired feet and muscles.",
+      "Simply add PASHOYA Pain Salt to warm water and soak your feet or body for 15–20 minutes. The aromatic blend of Eucalyptus, Mint, Lavender, Bergamot, Orange and Lemongrass oils adds a refreshing and calming sensory experience.",
+      "Ideal for those looking to relax after a long day, refresh tired feet and enjoy a simple, natural wellness ritual at home"
+    ],
+    "keyBenefits": "Helps relax tired muscles, soothe tired feet, ease everyday discomfort and provide a refreshing and calming bathing experience.",
+    "features": [
+      "Natural joint support",
+      "Deep relaxation",
+      "Soothes tired muscles",
+      "Eases daily discomfort",
+      "Promotes a refreshing detox soak",
+      "Helps you unwind and feel comfortable",
+      "Supports a calming self-care experience",
+      "Relaxing warm soak in just minutes"
+    ],
+    "price": 522.0,
+    "compareAtPrice": 695.0,
+    "currency": "INR",
+    "images": [
+      "/assets/uploads/products/thumb_6aa2766a3de89.png",
+      "/assets/uploads/products/gallery/gal_6aa2771cdc0cd_1789032220_0.png",
+      "/assets/uploads/products/gallery/gal_6aa2771cdc794_1789032220_1.png",
+      "/assets/uploads/products/gallery/gal_6aa2771cdcd9f_1789032220_2.png"
+    ],
+    "highlights": [
+      {
+        "title": "Relax Tired Feet Naturally",
+        "text": "Soothe tired feet, relax muscles and refresh yourself with a warm PASHOYA salt soak.",
+        "image": "/assets/uploads/products/banner_1_6aa30124c07f3.webp"
+      },
+      {
+        "title": "The Power of Essential Oils",
+        "text": "Infused with Eucalyptus, Mint, Lavender, Bergamot, Orange and Lemongrass essential oils for an uplifting and calming soak.",
+        "image": "/assets/uploads/products/banner_2_6aa3039e58ed2.webp"
+      },
+      {
+        "title": "Simple Self-Care in Minutes",
+        "text": "Add 2–4 tablespoons to warm water and soak your feet or body for 15–20 minutes. Relax, unwind and enjoy the soothing experience.",
+        "image": "/assets/uploads/products/banner_3_6aa3039e590cc.webp"
+      },
+      {
+        "title": "Pure Ingredients for Everyday Wellness",
+        "text": "A traditional mineral blend of Epsom Salt, Sajji Khar, Bhind Salt, Java Khar and essential oils, crafted for a refreshing self-care ritual.",
+        "image": "/assets/uploads/products/banner_4_6aa3039e5921a.webp"
+      }
+    ],
+    "category": "Powder",
+    "badge": "Best Seller",
+    "sku": "02",
+    "brand": "The Hakiman",
+    "variants": [
+      {
+        "id": "hk-11-default",
+        "title": "Default",
+        "price": 522.0,
+        "compareAtPrice": 695.0,
+        "sku": "02"
+      }
+    ],
+    "ingredients": "Epsom Salt, Sajji Khar, Bhind Salt, Java Khar and Essential Oils including Eucalyptus Oil, Mint Oil, Lavender Oil, Bergamot Oil, Orange Oil and Lemongrass Oil.",
+    "usageInstructions": "Add 2–4 tablespoons of PASHOYA Pain Salt to warm water. Soak your feet or body for 15–20 minutes. Relax and enjoy the soothing experience.",
+    "precautions": null,
+    "faqs": [],
+    "reviews": [],
+    "sourceUrl": "https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-",
+    "sourceMaxOrderQty": 85,
+    "availability": "in_stock",
+    "isDemo": false
+  }
+]

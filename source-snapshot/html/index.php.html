@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Pashoya Pain Salt - Natural Care for Happier Feet | The Hakiman</title>
+<meta name="description" content="Discover authentic, luxury Ayurvedic remedies and wellness products for modern living. Trusted heritage meets modern wellness.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Hakiman",
+  "url": "https://thehakiman.com",
+  "logo": "https://thehakiman.com/assets/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+
+<link rel="canonical" href="https://thehakiman.com/index.php">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Pashoya Pain Salt - Natural Care for Happier Feet | The Hakiman">
+<meta property="og:description" content="Discover authentic, luxury Ayurvedic remedies and wellness products for modern living. Trusted heritage meets modern wellness.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Hakiman">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pashoya Pain Salt - Natural Care for Happier Feet | The Hakiman">
+<meta name="twitter:description" content="Discover authentic, luxury Ayurvedic remedies and wellness products for modern living. Trusted heritage meets modern wellness.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/fab.png">
+    <link rel="apple-touch-icon" href="/assets/fab.png">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <!-- [NEW] Logo ke rang wali theme + hover animations + search/wishlist/categories UI -->
+    <link rel="stylesheet" href="/assets/css/theme.css?v=3">
+
+    <style>
+        /* -------------------------------------------
+           Global Header Tokens & Reset
+        ------------------------------------------- */
+        :root {
+            --c-forest: #2D3A24; 
+            --c-cream: #F6F5EE;
+            --c-white: #FFFFFF;
+            --c-tint: #EEF2E5;
+            --c-orange-primary: #55703D;
+            --c-orange-dark: #3D5229;
+            --c-gray-100: #f3f4f6;
+            --c-gray-600: #555555;
+            
+            --transition-fast: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            --header-height-desktop: 88px;
+            --header-height-mobile: 72px;
+        }
+
+        html, body { 
+            overflow-x: hidden; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--c-cream);
+        }
+
+        body, p, span, a, input, button { font-family: 'Jost', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        
+        :focus-visible { outline: 2px solid var(--c-orange-primary); outline-offset: 2px; }
+
+        /* -------------------------------------------
+           1. Main Header
+        ------------------------------------------- */
+        #main-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(45, 58, 36, 0.08);
+            transition: box-shadow var(--transition-fast);
+            width: 100%;
+        }
+        #main-header.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: var(--header-height-desktop);
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* -------------------------------------------
+           2. Logo & Navigation
+        ------------------------------------------- */
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .site-logo {
+            max-height: 68px; /* [CHANGE] logo bada - naam saaf dikhe */
+            width: auto;
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            flex: 1;
+            justify-content: center;
+        }
+        
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--c-forest);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 8px 0;
+            transition: color var(--transition-fast);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--c-orange-primary);
+            transition: width var(--transition-fast), left var(--transition-fast);
+        }
+        .nav-link:hover { color: var(--c-orange-primary); }
+        .nav-link:hover::after { width: 100%; left: 0; }
+
+        .mobile-menu-extras { display: none; }
+        .mobile-menu-extras i { width: 22px; text-align: center; margin-right: 12px; color: var(--c-orange-primary); }
+
+        /* -------------------------------------------
+           3. Action Icons & Cart Badge
+        ------------------------------------------- */
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            z-index: 10;
+        }
+        
+        .icon-link {
+            color: var(--c-forest);
+            font-size: 1.3rem;
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .icon-link:hover {
+            color: var(--c-orange-primary);
+            transform: scale(1.08);
+        }
+
+        .cart-count-badge {
+            background-color: var(--c-orange-primary);
+            color: var(--c-white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            height: 18px;
+            min-width: 18px;
+            border-radius: 99px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            padding: 0 5px;
+            box-shadow: 0 2px 5px rgba(85, 112, 61, 0.4);
+            border: 2px solid var(--c-white);
+        }
+
+        .mobile-menu-btn { display: none; }
+
+        /* -------------------------------------------
+           4. Mobile Search Overlay
+        ------------------------------------------- */
+        .mobile-search-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(250, 246, 240, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .mobile-search-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-search-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+        .close-search {
+            background: none;
+            border: none;
+            font-size: 2.2rem;
+            color: var(--c-forest);
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        .close-search:hover { color: var(--c-orange-primary); }
+        
+        .mobile-search-form {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--c-forest);
+            padding-bottom: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        .mobile-search-overlay.active .mobile-search-form { transform: translateY(0); }
+        
+        .mobile-search-input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-family: 'Playfair Display', serif;
+            color: var(--c-forest);
+            outline: none;
+            padding: 8px 0;
+        }
+        .mobile-search-input::placeholder { color: var(--c-gray-600); opacity: 0.5; }
+        .mobile-search-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--c-forest);
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        .mobile-search-btn:hover { color: var(--c-orange-primary); }
+
+        /* -------------------------------------------
+           5. Responsive Mobile Layout & Side Drawer
+        ------------------------------------------- */
+        @media (max-width: 991px) {
+            .header-container {
+                height: var(--header-height-mobile);
+                padding: 0 16px;
+            }
+
+            .header-left { gap: 10px; }
+
+            .mobile-menu-btn {
+                display: flex;
+                align-items: center;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                color: var(--c-forest);
+                cursor: pointer;
+                padding: 6px 10px 6px 0;
+            }
+
+            .site-logo { max-height: 54px; }
+            .desktop-only { display: none !important; }
+
+            #main-header {
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                background-color: var(--c-white);
+            }
+
+            .mobile-menu-backdrop {
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background: rgba(0, 0, 0, 0.65); 
+                z-index: 999;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease;
+            }
+            .mobile-menu-backdrop.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-menu {
+                position: fixed !important;
+                top: 0;
+                left: 0; 
+                width: 80vw !important;
+                max-width: 320px;
+                height: 100vh; 
+                height: 100dvh;
+                background-color: var(--c-cream) !important; 
+                z-index: 1002; 
+                display: flex !important; 
+                flex-direction: column !important;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 80px 24px 40px;
+                transform: translateX(-100%); 
+                transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+                box-shadow: 4px 0 25px rgba(0,0,0,0.1);
+                overflow-y: auto;
+            }
+            .nav-menu.active {
+                transform: translateX(0) !important; 
+            }
+
+            .close-menu-btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: none;
+                border: none;
+                font-size: 2.2rem;
+                color: var(--c-forest);
+                cursor: pointer;
+                padding: 5px;
+                z-index: 1003;
+            }
+
+            .nav-link {
+                font-size: 1.15rem;
+                width: 100%;
+                padding: 16px 0;
+                border-bottom: 1px solid rgba(45, 58, 36, 0.08);
+            }
+            .nav-link::after { display: none; }
+
+            .mobile-menu-extras {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+                padding-top: 15px;
+                gap: 8px;
+            }
+            .mobile-menu-extras .nav-link {
+                border-bottom: none;
+                font-size: 1.1rem;
+                padding: 12px 0;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .mobile-menu-backdrop, .close-menu-btn { display: none !important; }
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '1098034349243288'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=1098034349243288&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+<!-- Backdrop layer -->
+<div class="mobile-menu-backdrop" id="mobile-menu-backdrop" aria-hidden="true"></div>
+
+<!-- Mobile Search Overlay Modal -->
+<div class="mobile-search-overlay" id="mobile-search-overlay" aria-hidden="true" role="dialog">
+    <div class="mobile-search-header">
+        <button class="close-search" id="close-search-btn" aria-label="Close Search">&times;</button>
+    </div>
+    <form class="mobile-search-form" action="/shop.php" method="GET">
+        <input type="text" name="q" class="mobile-search-input" placeholder="Search syrup, soap, powder..." required aria-label="Search input" autocomplete="off" data-hk-suggest="overlay">
+        <button type="submit" class="mobile-search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+    </form>
+    <!-- [NEW] Live search suggestions -->
+    <div class="hk-suggest-box" id="hk-suggest-overlay" role="listbox" aria-label="Search suggestions"></div>
+</div>
+
+<!-- Main Header -->
+<header class="header" id="main-header">
+    
+    <!-- Navigation Area -->
+    <div class="header-container">
+        
+        <!-- Left Section -->
+        <div class="header-left">
+            <button class="mobile-menu-btn" id="mobile-drawer-btn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.php" class="logo-link" aria-label="Go to homepage">
+                <img src="/assets/logo.png" alt="The Hakiman" class="site-logo">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation & Mobile Menu Content -->
+        <nav class="nav-menu" id="mobile-nav-drawer" aria-label="Main Navigation">
+            <button class="close-menu-btn" id="close-menu-btn" aria-label="Close menu">&times;</button>
+            
+            <a href="index.php" class="nav-link">Home</a>
+            <a href="shop.php" class="nav-link">Shop</a>
+            <!-- [NEW] Categories dropdown (desktop hover / mobile tap) -->
+            <div class="nav-dropdown" id="nav-cat-dropdown">
+                <a href="category.php" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Categories <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+                <div class="nav-dropdown-menu" role="menu">
+                                            <a href="shop.php?category=2" class="nav-dropdown-item" role="menuitem">
+                            <span>Powder</span>
+                            <small>1</small>
+                        </a>
+                                            <a href="shop.php?category=1" class="nav-dropdown-item" role="menuitem">
+                            <span>Soap</span>
+                            <small>3</small>
+                        </a>
+                                            <a href="shop.php?category=3" class="nav-dropdown-item" role="menuitem">
+                            <span>Syrup</span>
+                            <small>2</small>
+                        </a>
+                                            <a href="shop.php?category=4" class="nav-dropdown-item" role="menuitem">
+                            <span>Tablet</span>
+                            <small>2</small>
+                        </a>
+                                        <a href="category.php" class="nav-dropdown-item nav-dropdown-all" role="menuitem"><span>View All Categories</span> <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="about.php" class="nav-link">Our Heritage</a>
+            
+            <!-- Utility Links Moved to Menu for Mobile -->
+            <div class="mobile-menu-extras">
+                <a href="#" class="nav-link trigger-search"><i class="fas fa-search"></i> Search</a>
+                <a href="wishlist.php" class="nav-link"><i class="far fa-heart"></i> Wishlist <span class="wishlist-count-inline wishlist-count-badge" data-count="0" hidden>0</span></a>
+                
+                <!-- NEW LOGIN/LOGOUT LOGIC FOR MOBILE MENU -->
+                                    <a href="login.php" class="nav-link"><i class="far fa-user"></i> Login / Register</a>
+                            </div>
+        </nav>
+
+        <!-- Utility Icons (Right Side) -->
+        <div class="header-icons">
+            <button type="button" class="icon-link trigger-search" aria-label="Open Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <!-- [NEW] Wishlist icon har screen par + count badge -->
+            <a href="wishlist.php" class="icon-link icon-wishlist" aria-label="Wishlist" title="Wishlist">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <span class="wishlist-count-badge" hidden>0</span>
+            </a>
+            
+            <!-- NEW LOGIN/LOGOUT LOGIC FOR DESKTOP ICONS -->
+            <!-- [CHANGE] Login / Account / Logout icons saaf alag-alag -->
+                            <a href="login.php" class="icon-link icon-login desktop-only" aria-label="Login / Register" title="Login / Register">
+                    <i class="far fa-user" aria-hidden="true"></i><span class="icon-label">Login</span>
+                </a>
+                        
+            <a href="cart.php" class="icon-link" aria-label="Shopping Cart">
+                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                <span class="cart-count-badge">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // ==========================================
+    // 1. MOBILE SIDE-DRAWER LOGIC 
+    // ==========================================
+    const mobileMenuBtn = document.getElementById('mobile-drawer-btn');
+    const navMenu = document.getElementById('mobile-nav-drawer');
+    const menuBackdrop = document.getElementById('mobile-menu-backdrop');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+
+    function openMobileMenu() {
+        navMenu.classList.add('active');
+        menuBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeMobileMenu() {
+        navMenu.classList.remove('active');
+        menuBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+    if (menuBackdrop) menuBackdrop.addEventListener('click', closeMobileMenu);
+
+    
+    // ==========================================
+    // 2. SEARCH OVERLAY LOGIC
+    // ==========================================
+    const searchBtns = document.querySelectorAll('.trigger-search');
+    const closeSearchBtn = document.getElementById('close-search-btn');
+    const searchOverlay = document.getElementById('mobile-search-overlay');
+    const searchInput = document.querySelector('.mobile-search-input');
+
+    searchBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (navMenu && navMenu.classList.contains('active')) closeMobileMenu();
+            
+            searchOverlay.classList.add('active');
+            searchOverlay.setAttribute('aria-hidden', 'false');
+            setTimeout(() => searchInput.focus(), 300);
+        });
+    });
+
+    if (closeSearchBtn) {
+        closeSearchBtn.addEventListener('click', () => {
+            searchOverlay.classList.remove('active');
+            searchOverlay.setAttribute('aria-hidden', 'true');
+        });
+    }
+
+    // Close overlays on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (searchOverlay.classList.contains('active')) {
+                searchOverlay.classList.remove('active');
+                searchOverlay.setAttribute('aria-hidden', 'true');
+            }
+            if (navMenu && navMenu.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        }
+    });
+
+    // ==========================================
+    // 3. HEADER SCROLL SHADOW
+    // ==========================================
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+});
+</script>
+<!-- GOOGLE FONTS & ICONS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    /* ========================================================
+       PREMIUM WELLNESS DESIGN SYSTEM (UNIFIED & COMPACT)
+       ======================================================== */
+    :root {
+        --c-cream: #F6F5EE; 
+        --c-white: #FFFFFF;
+        --c-tint: #EEF2E5; 
+        --c-card-bg: #F9F9F9;
+        
+        --c-orange-primary: #55703D; 
+        --c-orange-dark: #3D5229;
+        --c-forest: #2D3A24; 
+        --c-maroon: #7B1818;
+
+        --font-serif: 'Playfair Display', serif;
+        --font-sans: 'Jost', sans-serif;
+        
+        /* Optimized & Compact Typography */
+        --text-sm: clamp(0.75rem, 1vw + 0.3rem, 0.85rem);
+        --text-base: clamp(0.9rem, 1vw + 0.3rem, 1rem);
+        --text-lg: clamp(1.05rem, 1.2vw + 0.4rem, 1.15rem);
+        --text-xl: clamp(1.4rem, 2vw + 0.5rem, 1.7rem);
+        --text-2xl: clamp(1.6rem, 3vw + 0.5rem, 2rem);
+
+        --transition-smooth: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+        width: 100%; margin: 0; padding: 0;
+        background-color: var(--c-cream);
+        color: var(--c-forest);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden; scroll-behavior: smooth;
+    }
+
+    /* Section Backgrounds & Optimized Spacing */
+    .bg-cream { background-color: var(--c-cream); }
+    .bg-white { background-color: var(--c-white); }
+    .bg-tint { background-color: var(--c-tint); }
+
+    .section-wrapper { 
+        width: 100%; 
+        padding: 60px 0; /* Compacted from 80px */
+        position: relative; 
+    }
+    
+    .container { 
+        max-width: 1280px; 
+        margin: 0 auto; 
+        padding: 0 24px; 
+    }
+
+    /* Unified Compact Typography */
+    h1, h2, h3, h4 { 
+        font-family: var(--font-serif); 
+        margin: 0; 
+        color: var(--c-forest); 
+        font-weight: 600; 
+        line-height: 1.3;
+    }
+    
+    p { 
+        font-size: var(--text-base); 
+        line-height: 1.5; 
+        opacity: 0.85; 
+        margin: 0; 
+    }
+
+    .section-header { 
+        text-align: center; 
+        max-width: 800px; 
+        margin: 0 auto 30px auto; /* Compacted */
+    }
+    
+    .section-header h2 { 
+        font-size: var(--text-xl); 
+        color: var(--c-forest); 
+        margin-bottom: 10px; /* Compacted */
+    }
+    
+    .section-header p { 
+        font-size: var(--text-base); 
+        color: var(--c-forest); 
+    }
+
+    /* ========================================================
+       MODERN COMPACT BUTTONS
+       ======================================================== */
+    .btn {
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 8px;
+        font-family: var(--font-sans); 
+        font-weight: 500; 
+        font-size: 0.88rem; /* Smaller font */
+        text-transform: uppercase; 
+        letter-spacing: 1px;
+        padding: 12px 28px; /* Compact padding */
+        border-radius: 99px; 
+        text-decoration: none;
+        transition: all var(--transition-smooth); 
+        cursor: pointer;
+        border: 2px solid transparent;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-primary {
+        background: var(--c-orange-primary); 
+        color: var(--c-white);
+        box-shadow: 0 4px 15px rgba(85, 112, 61, 0.15); /* Subtle shadow */
+    }
+    
+    .btn-primary:hover {
+        background: var(--c-orange-dark); 
+        color: var(--c-white);
+        transform: translateY(-2px); 
+        box-shadow: 0 6px 20px rgba(85, 112, 61, 0.25);
+    }
+    
+    .btn-outline {
+        background: transparent; 
+        color: var(--c-forest); 
+        border-color: var(--c-forest);
+    }
+    
+    .btn-outline:hover {
+        background: var(--c-forest); 
+        color: var(--c-white); 
+        transform: translateY(-2px);
+    }
+    
+    .btn-center-wrap { 
+        text-align: center; 
+        margin-top: 40px; /* Compacted */
+    }
+
+    /* ========================================================
+       HERO SECTION
+       ======================================================== */
+    .hero { 
+        position: relative; 
+        width: 100vw; 
+        left: 50%; 
+        margin-left: -50vw; 
+        margin-right: -50vw; 
+        background-color: var(--c-cream); 
+        display: block; 
+    }
+    .hero-visual { position: relative; width: 100%; max-width: 1920px; margin: 0 auto; }
+    .hero-visual .height-setter { width: 100%; height: auto; visibility: hidden; display: block; }
+    .hero-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transform: scale(1.02); transition: opacity 1.2s ease-in-out, transform 4.5s linear; }
+    .hero-slide.active { opacity: 1; transform: scale(1); z-index: 2; }
+    .slider-dots { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+    .slider-dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(0, 0, 0, 0.15); cursor: pointer; transition: all var(--transition-smooth); }
+    .slider-dot:hover { background: rgba(0,0,0,0.3); }
+    .slider-dot.active { background: var(--c-orange-primary); transform: scale(1.3); }
+
+    /* ========================================================
+       ANNOUNCEMENT BAR (Slimmer)
+       ======================================================== */
+    .announcement-bar { background: var(--c-forest); color: var(--c-cream); overflow: hidden; padding: 6px 0; display: flex; width: 100vw; position: relative; left: 50%; margin-left: -50vw; margin-right: -50vw; }
+    .announcement-track { display: flex; white-space: nowrap; animation: scrollText 35s linear infinite; will-change: transform; }
+    .announcement-item { display: inline-flex; align-items: center; padding: 0 30px; font-size: 0.82rem; letter-spacing: 0.5px; text-transform: capitalize; font-weight: 500; }
+    .announcement-item span { color: var(--c-orange-primary); margin: 0 12px; }
+    @keyframes scrollText { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ========================================================
+       UNIVERSAL 4-COLUMN GRID (Compact Icons & Cards)
+       ======================================================== */
+    .grid-4 { 
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 20px; 
+        text-align: center; 
+    }
+    
+    .grid-card {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 25px 12px; /* Compacted */
+        border-radius: 12px; 
+        transition: all var(--transition-smooth); 
+        background: transparent;
+        height: 100%;
+    }
+    
+    .grid-icon {
+        width: 54px; /* Reduced from 70px */
+        height: 54px; 
+        margin: 0 auto 15px; 
+        background: rgba(85, 112, 61, 0.08);
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        color: var(--c-orange-primary); 
+        transition: all var(--transition-smooth);
+    }
+    
+    .grid-icon svg { width: 24px; height: 24px; transition: transform var(--transition-smooth); } /* Reduced from 32px */
+    .grid-card h4, .grid-card h3 { font-size: 1.1rem; margin-bottom: 8px; text-transform: capitalize; }
+    .grid-card p { font-size: var(--text-sm); line-height: 1.4; }
+
+    @media (hover: hover) {
+        .grid-card:hover { transform: translateY(-5px); background: var(--c-white); box-shadow: 0 10px 25px rgba(45, 58, 36, 0.04); }
+        .bg-white .grid-card:hover { background: var(--c-cream); }
+        .grid-card:hover .grid-icon { background: rgba(85, 112, 61, 0.15); transform: scale(1.05); }
+    }
+
+    /* ========================================================
+       PRODUCTS GRID (Modern, Consistent Height, 2-Line Title)
+       ======================================================== */
+    .product-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+        gap: 24px; 
+    }
+    
+    .product-card {
+        background: var(--c-card-bg); 
+        border: 1px solid rgba(0,0,0,0.03); 
+        border-radius: 12px; 
+        padding: 15px; /* Compacted padding */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+        transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+        position: relative; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: left;
+        height: 100%; /* Ensures all cards stretch equally */
+    }
+    
+    .product-card:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); 
+    }
+    
+    /* Discount Badge - Smaller */
+    .product-badge {
+        position: absolute; 
+        top: 15px; 
+        left: 15px; 
+        background: var(--c-maroon); 
+        color: var(--c-white);
+        font-family: var(--font-sans); 
+        font-size: 0.75rem; 
+        font-weight: 500; 
+        padding: 4px 10px; 
+        border-radius: 99px; 
+        z-index: 2;
+    }
+    
+    /* Wishlist Heart - Compact */
+    .wishlist-btn {
+        position: absolute; 
+        top: 15px; 
+        right: 15px; 
+        width: 32px; 
+        height: 32px;
+        background: var(--c-white); 
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        color: #999; 
+        z-index: 2; 
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
+        text-decoration: none; 
+        transition: all 0.2s;
+        font-size: 0.95rem;
+    }
+    .wishlist-btn:hover { color: var(--c-maroon); transform: scale(1.1); }
+
+    .product-img-wrap {
+        position: relative; 
+        width: 100%; 
+        padding-top: 100%; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        background: transparent; 
+        margin-bottom: 15px; 
+        display: block;
+    }
+    
+    .product-img-wrap img { 
+        position: absolute; 
+        top: 0; left: 0; width: 100%; height: 100%; 
+        object-fit: cover; transition: transform var(--transition-smooth); 
+    }
+    
+    .product-card:hover .product-img-wrap img { transform: scale(1.03); }
+    
+    .product-info { display: flex; flex-direction: column; flex-grow: 1; }
+    
+    .product-brand { 
+        font-size: 0.75rem; color: #888; text-transform: uppercase; 
+        letter-spacing: 0.5px; margin-bottom: 5px; font-weight: 500; 
+    }
+    
+    /* 2-Line Limit for Consistent Height */
+    .product-title { 
+        font-family: var(--font-serif); 
+        font-size: 1.1rem; 
+        color: var(--c-forest); 
+        text-decoration: none; 
+        margin-bottom: 15px; 
+        font-weight: 600; 
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 2.8em; /* 1.4 line-height * 2 lines = 2.8em */
+    }
+    
+    .product-meta { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+    .product-price-wrap { display: flex; gap: 8px; align-items: center; flex-direction: row; }
+    .price-old { text-decoration: line-through; color: #999; font-size: 0.88rem; font-family: var(--font-sans); }
+    .price-new { color: var(--c-forest); font-weight: 600; font-size: 1.15rem; font-family: var(--font-sans); }
+    
+    /* Cart Button - Compact */
+    .btn-grid-cart {
+        width: 38px; height: 38px; border-radius: 50%; background: rgba(85, 112, 61, 0.1);
+        color: var(--c-orange-primary); display: flex; align-items: center; justify-content: center;
+        text-decoration: none; transition: all var(--transition-smooth); font-size: 1rem; border: none; cursor: pointer;
+    }
+    .btn-grid-cart:hover { background: var(--c-orange-primary); color: var(--c-white); transform: scale(1.05); }
+
+    /* ========================================================
+       REELS & SPOTLIGHTS CSS (Compacted)
+       ======================================================== */
+    .reels-track-container { width: 100%; max-width: 1280px; margin: 0 auto; overflow-x: auto; padding-bottom: 15px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .reels-track-container::-webkit-scrollbar { display: none; }
+    .reels-track { display: flex; gap: 14px; padding: 0 24px; width: max-content; margin: 0 auto; }
+    .reel-item { width: 160px; height: 284px; border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; transform: scale(1); transition: transform var(--transition-smooth); box-shadow: 0 6px 15px rgba(0,0,0,0.06); background: #000; flex-shrink: 0; }
+    .reel-item:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.12); }
+    .reel-item video { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+
+    /* REEL MODAL CSS */
+    .reel-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); z-index: 9999; display: flex; justify-content: center; align-items: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; backdrop-filter: blur(5px); }
+    .reel-modal.active { opacity: 1; visibility: visible; }
+    .reel-modal-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000; line-height: 1; font-family: sans-serif; }
+    .reel-modal-content { position: relative; width: 90%; max-width: 400px; height: 85vh; border-radius: 16px; overflow: hidden; transform: scale(0.8); transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); }
+    .reel-modal.active .reel-modal-content { transform: scale(1); }
+    .reel-modal-content video { width: 100%; height: 100%; object-fit: cover; background: #000; }
+
+    /* ========================================================
+       EDITORIAL STORY TEXT BLOCKS
+       ======================================================== */
+    .story-text-wrap { 
+        max-width: 800px; 
+        margin: 0 auto; 
+        text-align: center; 
+    }
+    
+    .story-text-wrap h2 { 
+        font-size: var(--text-xl); 
+        margin-bottom: 15px; 
+        color: var(--c-orange-dark); 
+        position: relative; 
+        display: inline-block; 
+        padding-bottom: 8px; 
+    }
+    
+    .story-text-wrap h2::after { 
+        content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); 
+        width: 30px; height: 2px; background-color: var(--c-orange-primary); border-radius: 2px; 
+        transition: width var(--transition-smooth); 
+    }
+    
+    .story-text-wrap:hover h2::after { width: 60px; }
+    
+    .ingredient-pills { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
+    .pill { padding: 8px 22px; border-radius: 99px; border: 1px solid var(--c-orange-primary); color: var(--c-orange-dark); font-weight: 500; font-size: 0.9rem; background: rgba(85, 112, 61, 0.05); transition: all var(--transition-smooth); }
+    .pill:hover { background: var(--c-orange-primary); color: var(--c-white); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(85, 112, 61, 0.15); }
+
+    /* ========================================================
+       FULL-BLEED BANNERS (No extra spacing)
+       ======================================================== */
+    .full-bleed-banner { width: 100vw; position: relative; left: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden; display: block; line-height: 0; }
+    .full-bleed-banner a { display: block; width: 100%; height: 100%; cursor: pointer; text-decoration: none; }
+    .full-bleed-banner img { display: block; width: 100%; height: auto; max-width: none; border: 0; margin: 0; padding: 0; transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), filter 0.8s ease; will-change: transform; }
+    @media (hover: hover) { .full-bleed-banner:hover img { transform: scale(1.02); filter: brightness(1.03); } }
+
+    /* ========================================================
+       PURCHASE BLOCK
+       ======================================================== */
+    .purchase-block { text-align: center; max-width: 650px; margin: 0 auto; }
+    .purchase-block h2 { font-size: var(--text-2xl); color: var(--c-orange-primary); margin-bottom: 8px; }
+    .purchase-block h3 { font-family: var(--font-sans); font-size: var(--text-lg); margin-bottom: 20px; font-weight: 400; color: var(--c-forest); }
+
+    /* ========================================================
+       MOBILE FLOATING CTA (Compact)
+       ======================================================== */
+    .mobile-cta-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(250, 246, 240, 0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 10px 16px; box-shadow: 0 -3px 15px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; z-index: 999; transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); border-top: 1px solid rgba(45, 58, 36, 0.05); }
+    .mobile-cta-bar.visible { transform: translateY(0); }
+    .mobile-cta-title { font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; color: var(--c-forest); }
+    .mobile-cta-bar .btn { padding: 10px 22px; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 99px; }
+    @media (min-width: 769px) { .mobile-cta-bar { display: none; } }
+
+    /* ========================================================
+       SCROLL REVEAL & STAGGER SYSTEM
+       ======================================================== */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); will-change: opacity, transform; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .grid-4.reveal { transition: none; opacity: 1; transform: none; }
+    .grid-4.reveal .grid-card { opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+    .grid-4.reveal.active .grid-card { opacity: 1; transform: translateY(0); }
+    .grid-4.reveal.active .grid-card:nth-child(1) { transition-delay: 0.1s; }
+    .grid-4.reveal.active .grid-card:nth-child(2) { transition-delay: 0.2s; }
+    .grid-4.reveal.active .grid-card:nth-child(3) { transition-delay: 0.3s; }
+    .grid-4.reveal.active .grid-card:nth-child(4) { transition-delay: 0.4s; }
+
+    /* ========================================================
+       📱 MOBILE OPTIMIZATION (Strictly Balanced & Compact)
+       ======================================================== */
+    @media (max-width: 768px) {
+        body { padding-bottom: 60px; }
+        .container { padding: 0 16px; }
+        .section-wrapper { padding: 40px 0; } 
+        
+        .section-header { margin-bottom: 25px; }
+        .announcement-bar { padding: 6px 0; }
+        .announcement-item { font-size: 0.75rem; padding: 0 15px; }
+        
+        /* Compact Buttons for Mobile */
+        .btn { padding: 10px 22px; font-size: 0.8rem; letter-spacing: 0.5px; }
+
+        /* Reels Mobile */
+        .reels-track-container { scroll-snap-type: x mandatory; padding-left: 16px; padding-right: 16px; }
+        .reels-track { padding: 0; gap: 10px; margin: 0; }
+        .reel-item { width: 135px; height: 240px; scroll-snap-align: start; }
+
+        /* Products Grid Mobile - Perfectly scaled */
+        .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .product-card { padding: 10px; border-radius: 10px; }
+        .product-badge { top: 10px; left: 10px; font-size: 0.65rem; padding: 3px 6px; }
+        .wishlist-btn { top: 10px; right: 10px; width: 28px; height: 28px; font-size: 0.8rem; }
+        .product-img-wrap { margin-bottom: 10px; border-radius: 8px; }
+        .product-title { font-size: 0.95rem; margin-bottom: 10px; line-height: 1.35; min-height: 2.7em; }
+        .product-brand { font-size: 0.65rem; margin-bottom: 3px; }
+        .price-new { font-size: 0.95rem; }
+        .price-old { font-size: 0.8rem; }
+        .btn-grid-cart { width: 32px !important; height: 32px !important; font-size: 0.85rem !important; }
+
+        /* 4-Column Grid Mobile (Retained layout, minimal padding) */
+        .grid-4 { grid-template-columns: repeat(4, 1fr); gap: 6px; width: 100%; }
+        .grid-card { padding: 10px 4px; border-radius: 8px; justify-content: flex-start; align-items: center; width: 100%; height: auto; }
+        .grid-icon { width: 40px; height: 40px; margin-bottom: 8px; background: rgba(85, 112, 61, 0.06); }
+        .grid-icon svg { width: 18px; height: 18px; }
+        .grid-card h4, .grid-card h3 { font-size: 11px; margin-bottom: 4px; line-height: 1.2; text-align: center; }
+        .grid-card p { font-size: 10px; line-height: 1.3; text-align: center; padding: 0; }
+        
+        .ingredient-pills { gap: 8px; margin-top: 15px; }
+        .pill { padding: 6px 14px; font-size: 0.8rem; }
+    }
+
+
+    /* ========================================================
+       [FIX] HOME ADD-TO-CART BUTTON + MOBILE VISIBILITY
+       ======================================================== */
+    .btn-grid-cart { flex-shrink: 0; padding: 0; font-family: inherit; line-height: 1; -webkit-tap-highlight-color: transparent; }
+    .btn-grid-cart:focus-visible { outline: 2px solid var(--c-orange-primary); outline-offset: 2px; }
+    .btn-grid-cart.is-loading { pointer-events: none; opacity: 0.7; }
+    .btn-grid-cart.is-added { background: #059669 !important; color: var(--c-white) !important; }
+    .product-meta { gap: 8px; min-width: 0; }
+    .product-price-wrap { min-width: 0; flex-wrap: wrap; }
+    .wishlist-btn.is-active, .wishlist-btn.is-active:hover { color: var(--c-maroon); }
+
+    /* Toast (Add to cart message) */
+    .hk-toast { position: fixed; left: 50%; bottom: 90px; transform: translate(-50%, 20px); background: var(--c-forest); color: var(--c-white); padding: 12px 18px; border-radius: 12px; font-size: 0.9rem; font-family: var(--font-sans); box-shadow: 0 10px 30px rgba(0,0,0,0.2); z-index: 10050; opacity: 0; visibility: hidden; transition: opacity .3s ease, transform .3s ease, visibility .3s; display: flex; align-items: center; gap: 12px; max-width: calc(100vw - 32px); width: max-content; }
+    .hk-toast.show { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+    .hk-toast.error { background: #b91c1c; }
+    .hk-toast a { color: #DCE8C8; font-weight: 600; text-decoration: underline; white-space: nowrap; }
+
+    @media (max-width: 768px) {
+        /* Mobile par price upar-neeche, taaki cart button card se bahar na jaye / chhupe nahi */
+        .product-meta { align-items: flex-end; }
+        .product-price-wrap { flex-direction: column; align-items: flex-start; gap: 0; }
+        .price-old { font-size: 0.75rem; line-height: 1.2; }
+        .price-new { line-height: 1.25; }
+        /* Mobile par button saaf dikhe (solid orange) aur touch karna aasan ho */
+        .btn-grid-cart { width: 36px !important; height: 36px !important; font-size: 0.9rem !important; background: var(--c-orange-primary); color: var(--c-white); box-shadow: 0 3px 10px rgba(85, 112, 61, 0.25); }
+        .btn-grid-cart:hover { background: var(--c-orange-dark); color: var(--c-white); }
+        .product-card:hover { transform: none; }
+        .hk-toast { bottom: 84px; font-size: 0.85rem; }
+    }
+    @media (max-width: 360px) {
+        .product-grid { gap: 8px; }
+        .product-card { padding: 8px; }
+        .price-new { font-size: 0.88rem; }
+        .btn-grid-cart { width: 32px !important; height: 32px !important; }
+    }
+
+    /* [NEW] Testimonials */
+    .hk-tm-track { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+    .hk-tm-card { position: relative; background: var(--c-white); border-radius: 18px; padding: 28px 24px 22px; box-shadow: 0 6px 20px rgba(45, 58, 36, 0.06); border: 1px solid rgba(45, 58, 36, 0.06); display: flex; flex-direction: column; gap: 14px; transition: transform .35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow .35s ease; overflow: hidden; }
+    .hk-tm-card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(45, 58, 36, 0.12); }
+    .hk-tm-quote { position: absolute; top: -8px; right: 18px; font-family: var(--font-serif); font-size: 6rem; line-height: 1; color: rgba(85, 112, 61, 0.10); pointer-events: none; }
+    .hk-tm-stars { color: #B08A3E; font-size: 1.05rem; letter-spacing: 2px; }
+    .hk-tm-stars span { color: #ddd8cb; }
+    .hk-tm-text { font-size: 0.97rem; line-height: 1.65; color: var(--c-forest); opacity: 0.9; flex: 1; }
+    .hk-tm-person { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px dashed rgba(45, 58, 36, 0.12); }
+    .hk-tm-person strong { display: block; font-size: 0.98rem; color: var(--c-forest); }
+    .hk-tm-person small { display: block; font-size: 0.8rem; color: #7d8774; }
+    .hk-tm-avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #55703D, #3D5229); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-family: var(--font-serif); font-size: 1.1rem; flex-shrink: 0; }
+    .hk-tm-verified { margin-left: auto; color: #55703D; }
+    @media (max-width: 768px) {
+        .hk-tm-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 10px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+        .hk-tm-track::-webkit-scrollbar { display: none; }
+        .hk-tm-card { flex: 0 0 82%; scroll-snap-align: start; padding: 22px 18px 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+        .reveal, .grid-4.reveal .grid-card { opacity: 1 !important; transform: none !important; }
+    }
+</style>
+
+<!-- FULL WIDTH HERO IMAGE SLIDER -->
+<header class="hero">
+    <div class="hero-visual reveal active">
+        <img src="/assets/hero1.webp" class="height-setter" alt="height placeholder">
+        <img src="/assets/hero1.webp" alt="Pashoya Pain Salt Hero 1" class="hero-slide active" fetchpriority="high">
+        <img src="/assets/hero2.webp" alt="Pashoya Pain Salt Hero 2" class="hero-slide">
+        <img src="/assets/hero3.webp" alt="Pashoya Pain Salt Hero 3" class="hero-slide">
+    </div>
+    <div class="slider-dots">
+        <span class="slider-dot active"></span>
+        <span class="slider-dot"></span>
+        <span class="slider-dot"></span>
+    </div>
+</header>
+
+<!-- THIN ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <div class="announcement-track">
+        <div class="announcement-item">Natural Mineral Care <span>✦</span> Relax • Refresh • Rejuvenate <span>✦</span> Pashoya Pain Salt • 250 g <span>✦</span> Natural Foot & Body Soak <span>✦</span></div>
+        <div class="announcement-item">Natural Mineral Care <span>✦</span> Relax • Refresh • Rejuvenate <span>✦</span> Pashoya Pain Salt • 250 g <span>✦</span> Natural Foot & Body Soak <span>✦</span></div>
+        <div class="announcement-item">Natural Mineral Care <span>✦</span> Relax • Refresh • Rejuvenate <span>✦</span> Pashoya Pain Salt • 250 g <span>✦</span> Natural Foot & Body Soak <span>✦</span></div>
+    </div>
+</div>
+
+<!-- BENEFITS SECTION -->
+<section id="benefits" class="section-wrapper bg-white">
+    <div class="container">
+        <div class="grid-4 reveal">
+            <div class="grid-card">
+                <div class="grid-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3>Relax</h3>
+                <p>Soothing soak ritual.</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                </div>
+                <h3>Refresh</h3>
+                <p>Refresh tired feet.</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h3>Minerals</h3>
+                <p>Potent salt blend.</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                </div>
+                <h3>Wellness</h3>
+                <p>Daily self-care.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STORY TEXT 1 -->
+<section class="section-wrapper bg-tint">
+    <div class="container story-text-wrap reveal">
+        <h2>Soak • Relax • Refresh</h2>
+        <p>Experience the ultimate comfort. A simple, natural, and highly effective way to relieve tired feet and rejuvenate your senses.</p>
+    </div>
+</section>
+
+<!-- FULL WIDTH BANNER 1 -->
+<div class="full-bleed-banner reveal">
+    <a href="https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-">
+        <img src="/assets/img/sde%20(1).webp" alt="Pashoya Natural Care - Happier Feet" loading="lazy">
+    </a>
+</div>
+
+<!-- INGREDIENT CONTENT -->
+<section class="section-wrapper bg-cream">
+    <div class="container story-text-wrap reveal">
+        <h2>Pure Ingredients</h2>
+        <p>Crafted without harmful chemicals, delivering pure care derived from nature. A premium mineral blend formulated for your wellbeing.</p>
+        <div class="ingredient-pills">
+            <span class="pill">Epsom Salt</span>
+            <span class="pill">Sajji Khar</span>
+            <span class="pill">Bhind Salt</span>
+        </div>
+    </div>
+</section>
+
+<!-- FULL WIDTH BANNER 2 -->
+<div class="full-bleed-banner reveal">
+    <a href="https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-">
+        <img src="/assets/img/sde%20(2).webp" alt="Trusted for Safer Care - Lab Tested" loading="lazy">
+    </a>
+</div>
+
+<!-- CARE YOU CAN TRUST HTML SECTION -->
+<section class="section-wrapper bg-white">
+    <div class="container section-header reveal">
+        <h2>Care You Can Trust</h2>
+        <p>Because your feet matter. Discover daily care that is gentle, effective, and safe for your skin.</p>
+    </div>
+    <div class="container">
+        <div class="grid-4 reveal">
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.31V2M10 9.31V2M10 9.31l-5.69 8.25A2 2 0 0 0 5.96 21h12.08a2 2 0 0 0 1.65-3.44L14 9.31"/></svg></div>
+                <h4>Lab Tested</h4>
+                <p>Verified for quality and safety</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <h4>Natural Minerals</h4>
+                <p>Derived purely from nature</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <h4>Skin Safe</h4>
+                <p>Gentle formulation for all</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+                <h4>Daily Care</h4>
+                <p>Perfect for everyday use</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+     REELS SHOWCASE SECTION
+     ========================================== -->
+<section class="section-wrapper reveal bg-cream">
+    <div class="container section-header">
+        <h4 style="font-family: var(--font-sans); color: var(--c-orange-primary); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 8px;">Live Showcase</h4>
+        <h2>Reels & Spotlights</h2>
+        <p>Experience the brilliance of our finest selections in motion.</p>
+    </div>
+    
+    <div class="reels-track-container">
+        <div class="reels-track">
+            <div class="reel-item" data-video="/assets/reel/Video-49432.mp4"><video src="/assets/reel/Video-49432.mp4" autoplay loop muted playsinline></video></div>
+            <div class="reel-item" data-video="/assets/reel/Video-1938.mp4"><video src="/assets/reel/Video-1938.mp4" autoplay loop muted playsinline></video></div>
+            <div class="reel-item" data-video="/assets/reel/Video-93220.mp4"><video src="/assets/reel/Video-93220.mp4" autoplay loop muted playsinline></video></div>
+            <div class="reel-item" data-video="/assets/reel/Video-18525.mp4"><video src="/assets/reel/Video-18525.mp4" autoplay loop muted playsinline></video></div>
+            <div class="reel-item" data-video="/assets/reel/Video-82012.mp4"><video src="/assets/reel/Video-82012.mp4" autoplay loop muted playsinline></video></div>
+            <div class="reel-item" data-video="/assets/reel/Video-19780.mp4"><video src="/assets/reel/Video-19780.mp4" autoplay loop muted playsinline></video></div>
+        </div>
+    </div>
+</section>
+
+<!-- THE REEL MODAL -->
+<div class="reel-modal" id="videoModal">
+    <span class="reel-modal-close" id="closeVideoModal">&times;</span>
+    <div class="reel-modal-content">
+        <video id="modalVideoPlayer" src="" loop controls playsinline></video>
+    </div>
+</div>
+
+<!-- PASHOYA PURCHASE CTA -->
+<section class="section-wrapper bg-tint">
+    <div class="container purchase-block reveal">
+        <h2>Pashoya Pain Salt</h2>
+        <h3 style="margin-bottom: 15px;">Natural Body Detox & Foot Soak</h3>
+        <p style="margin-bottom: 25px;">Treat your feet to the care they deserve. Infused with natural Epsom salt, Sajji Khar, and Bhind salt.</p>
+        <a href="https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="btn btn-primary">
+            Buy Now <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+</section>
+
+<!-- FULL WIDTH BANNER 3 -->
+<div class="full-bleed-banner reveal">
+    <a href="https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-">
+        <img src="/assets/img/sde%20(4).webp" alt="Relax Tired Feet Naturally" loading="lazy">
+    </a>
+</div>
+
+<!-- ==========================================
+     PRODUCTS GRID SECTION (Fully Unified & Centered)
+     ========================================== -->
+<section class="section-wrapper bg-white">
+    <div class="container">
+        <!-- Unified Centered Header -->
+        <div class="section-header reveal">
+            <h2>Our Complete Range</h2>
+            <p>Holistic essentials for daily well-being.</p>
+        </div>
+
+                        <div class="hk-chip-row reveal" id="homeTagFilter" role="tablist" aria-label="Filter products">
+            <button type="button" class="hk-chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+                            <button type="button" class="hk-chip" data-filter="bestseller" role="tab" aria-selected="false"><i class="fas fa-crown" aria-hidden="true"></i> Best Sellers</button>
+                    </div>
+        
+        <div class="product-grid reveal" id="homeProductGrid">
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">10% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="24"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=haldi-chandan-hand-made-soap-1" class="product-img-wrap" aria-label="Haldi Chandan Hand Made Soap">
+                    <img src="/assets/uploads/products/thumb_6aa858804d07b.webp" alt="Haldi Chandan Hand Made Soap" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=haldi-chandan-hand-made-soap-1" class="product-title" title="Haldi Chandan Hand Made Soap">Haldi Chandan Hand Made Soap</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹240.00</span>
+                                                        <span class="price-new">₹216.00</span>
+                                                            <span class="hk-card-save">Save ₹24</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="24"
+                                data-product-name="Haldi Chandan Hand Made Soap"
+                                data-product-price="216"
+                                onclick="addToCart(this, 24, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">10% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="23"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=cystorita-syrup" class="product-img-wrap" aria-label="Cystorita Syrup">
+                    <img src="/assets/uploads/products/thumb_6aa84ceeeeb33.png" alt="Cystorita Syrup" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=cystorita-syrup" class="product-title" title="Cystorita Syrup">Cystorita Syrup</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹230.00</span>
+                                                        <span class="price-new">₹207.00</span>
+                                                            <span class="hk-card-save">Save ₹23</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="23"
+                                data-product-name="Cystorita Syrup"
+                                data-product-price="207"
+                                onclick="addToCart(this, 23, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">10% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="22"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=neem-hand-made-soap" class="product-img-wrap" aria-label="Neem Hand Made Soap">
+                    <img src="/assets/uploads/products/thumb_6a9bdf53c3880.jpeg" alt="Neem Hand Made Soap" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=neem-hand-made-soap" class="product-title" title="Neem Hand Made Soap">Neem Hand Made Soap</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹218.00</span>
+                                                        <span class="price-new">₹196.00</span>
+                                                            <span class="hk-card-save">Save ₹22</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="22"
+                                data-product-name="Neem Hand Made Soap"
+                                data-product-price="196"
+                                onclick="addToCart(this, 22, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">10% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="21"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=de-tan-hand-made-soap" class="product-img-wrap" aria-label="De-Tan Hand Made Soap">
+                    <img src="/assets/uploads/products/thumb_6a9bdf12d0303.png" alt="De-Tan Hand Made Soap" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=de-tan-hand-made-soap" class="product-title" title="De-Tan Hand Made Soap">De-Tan Hand Made Soap</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹285.00</span>
+                                                        <span class="price-new">₹257.00</span>
+                                                            <span class="hk-card-save">Save ₹28</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="21"
+                                data-product-name="De-Tan Hand Made Soap"
+                                data-product-price="257"
+                                onclick="addToCart(this, 21, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">10% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="13"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=hakiman-fizoliv-ds-syrup-sugar-free-ayurvedic-liver-amp-amp-amp-digestive-care" class="product-img-wrap" aria-label="Fizoliv DS Syrup">
+                    <img src="/assets/uploads/products/thumb_6aa846218e3be.jpeg" alt="Fizoliv DS Syrup" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=hakiman-fizoliv-ds-syrup-sugar-free-ayurvedic-liver-amp-amp-amp-digestive-care" class="product-title" title="Fizoliv DS Syrup">Fizoliv DS Syrup</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹237.00</span>
+                                                        <span class="price-new">₹213.00</span>
+                                                            <span class="hk-card-save">Save ₹24</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="13"
+                                data-product-name="Fizoliv DS Syrup"
+                                data-product-price="213"
+                                onclick="addToCart(this, 13, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">20% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="12"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=hakiman-cystorita-advanced-ayurvedic-women-s-health-capsules" class="product-img-wrap" aria-label="Cystorita Ayurvedic Women’s Health Capsules">
+                    <img src="/assets/uploads/products/thumb_6aa848397530a.png" alt="Cystorita Ayurvedic Women’s Health Capsules" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=hakiman-cystorita-advanced-ayurvedic-women-s-health-capsules" class="product-title" title="Cystorita Ayurvedic Women’s Health Capsules">Cystorita Ayurvedic Women’s Health Capsules</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹450.00</span>
+                                                        <span class="price-new">₹360.00</span>
+                                                            <span class="hk-card-save">Save ₹90</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="12"
+                                data-product-name="Cystorita Ayurvedic Women’s Health Capsules"
+                                data-product-price="360"
+                                onclick="addToCart(this, 12, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="bestseller">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">25% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="11"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="product-img-wrap" aria-label="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt">
+                    <img src="/assets/uploads/products/thumb_6aa2766a3de89.png" alt="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt" loading="lazy">
+                    <span class="hk-tag-badge hk-tag-bestseller hk-card-tag"><i class="fas fa-crown" aria-hidden="true"></i> Best Seller</span>                </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="product-title" title="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt">PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹695.00</span>
+                                                        <span class="price-new">₹522.00</span>
+                                                            <span class="hk-card-save">Save ₹173</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="11"
+                                data-product-name="PASHOYA Pain Salt – Joint Support &amp; Natural Body Detox Salt"
+                                data-product-price="522"
+                                onclick="addToCart(this, 11, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                        
+                        <article class="product-card" data-tags="">
+                <!-- Badge ([CHANGE] "10% OFF" - saaf aur bada) -->
+                                    <span class="product-badge">20% OFF</span>
+                                
+                <!-- Wishlist Icon ([FIX] ab button hai - click par page upar scroll nahi hota) -->
+                                <button type="button" class="wishlist-btn" aria-label="Add to wishlist" aria-pressed="false" data-wishlist-toggle data-wishlist-id="10"><i class="far fa-heart" aria-hidden="true"></i></button>
+
+                                
+                <a href="product.php?slug=advanced-ayurvedic-piles-care-capsules" class="product-img-wrap" aria-label="Piloman Advanced Ayurvedic Piles Care Capsules">
+                    <img src="/assets/uploads/products/thumb_6aa84af69769e.png" alt="Piloman Advanced Ayurvedic Piles Care Capsules" loading="lazy">
+                                    </a>
+                
+                <div class="product-info">
+                    <span class="product-brand">The Hakiman</span>
+                    <a href="product.php?slug=advanced-ayurvedic-piles-care-capsules" class="product-title" title="Piloman Advanced Ayurvedic Piles Care Capsules">Piloman Advanced Ayurvedic Piles Care Capsules</a>
+                    
+                    <div class="product-meta">
+                        <div class="product-price-wrap">
+                                                            <span class="price-old">₹450.00</span>
+                                                        <span class="price-new">₹360.00</span>
+                                                            <span class="hk-card-save">Save ₹90</span>
+                                                    </div>
+                        
+                                                    <button type="button" class="btn-grid-cart" aria-label="Add to cart" title="Add to cart"
+                                data-product-id="10"
+                                data-product-name="Piloman Advanced Ayurvedic Piles Care Capsules"
+                                data-product-price="360"
+                                onclick="addToCart(this, 10, 1);">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+                                            </div>
+                </div>
+            </article>
+                    </div>
+        
+        <!-- Unified Centered Button -->
+        <div class="btn-center-wrap reveal">
+            <a href="shop.php" class="btn btn-outline">View All Products</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- RELAX / WELLNESS HTML SECTION -->
+<section class="section-wrapper bg-tint">
+    <div class="container section-header reveal">
+        <h2>Relax Tired Feet Naturally</h2>
+        <p>Transform your bathroom into a private sanctuary. Draw out discomfort and ease your muscles naturally with every soak.</p>
+    </div>
+    <div class="container">
+        <div class="grid-4 reveal">
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                <h4>Relaxes Muscles</h4>
+                <p>Deep comfort for tension</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg></div>
+                <h4>Eases Joint Pain</h4>
+                <p>Supportive mineral care</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+                <h4>Refreshes</h4>
+                <p>Revitalize tired, heavy feet</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+                <h4>Calming Ritual</h4>
+                <p>Prepare for a restful night</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OUR STORY & HERITAGE HTML SECTION -->
+<section class="section-wrapper bg-cream">
+    <div class="container section-header reveal">
+        <h2>Our Story & Heritage</h2>
+        <h3 style="font-family: var(--font-sans); color: var(--c-orange-primary); font-size: var(--text-lg); margin-bottom: 12px; font-weight: 500;">Healing Wisdom Since 1953</h3>
+        <p style="margin-bottom: 15px;">Established in 1953, Hakiman Remedies has operated on a simple, enduring principle: treating every patron like family. What began as a humble herbal practice has grown into a trusted sanctuary for natural and holistic wellness.</p>
+        <p>For decades, traditional knowledge and time-tested formulations have been preserved and combined with modern standards of quality and care.</p>
+    </div>
+    
+    <div class="container">
+        <div class="grid-4">
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+                <h4>Tradition & Purity</h4>
+                <p>Time-tested formulations</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <h4>Personalized Care</h4>
+                <p>Thoughtful care for individuals</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+                <h4>Unwavering Trust</h4>
+                <p>Trusted across generations</p>
+            </div>
+            <div class="grid-card">
+                <div class="grid-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <h4>Modern Standards</h4>
+                <p>Reliable quality and care</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- [FIX] HOME PAGE ADD TO CART + WISHLIST
+     Pehle is page par addToCart() function exist hi nahi karta tha,
+     isliye home ka Add to Cart button kuch nahi karta tha. -->
+<div class="hk-toast" id="hkToast" role="status" aria-live="polite"></div>
+<script>
+const isLoggedIn = false;
+let hkToastTimer = null;
+
+function hkShowToast(html, isError) {
+    const toast = document.getElementById('hkToast');
+    if (!toast) { return; }
+    toast.innerHTML = html;
+    toast.classList.toggle('error', !!isError);
+    toast.classList.add('show');
+    clearTimeout(hkToastTimer);
+    hkToastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
+}
+
+function addToCart(btnElement, productId, quantity) {
+    if (window.event && typeof window.event.preventDefault === 'function') { window.event.preventDefault(); }
+
+    // Baaki pages (product / wishlist) jaisa hi flow: pehle login
+    if (!isLoggedIn) {
+        window.location.href = 'login.php?add_to_cart=' + encodeURIComponent(productId) + '&qty=' + encodeURIComponent(parseInt(quantity, 10) || 1); // [NEW] login ke baad product apne aap cart me
+        return;
+    }
+    if (!btnElement || btnElement.classList.contains('is-loading')) { return; }
+
+    const originalHTML = btnElement.innerHTML;
+    btnElement.classList.add('is-loading');
+    btnElement.disabled = true;
+    btnElement.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i>';
+
+    const body = new URLSearchParams();
+    body.append('action', 'add');
+    body.append('id', String(productId));
+    body.append('qty', String(quantity || 1));
+
+    fetch('ajax/cart.php', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString()
+    })
+    .then(response => { if (!response.ok) { throw new Error('Network error'); } return response.json(); })
+    .then(data => {
+        if (data.status === 'success') {
+            const badge = document.querySelector('.cart-count-badge');
+            if (badge && data.cart_count !== undefined) { badge.textContent = data.cart_count; }
+
+            // Meta Pixel: AddToCart Event (product page jaisa)
+            if (typeof fbq === 'function') {
+                fbq('track', 'AddToCart', {
+                    content_name: btnElement.getAttribute('data-product-name') || '',
+                    content_ids: [String(productId)],
+                    content_type: 'product',
+                    value: parseFloat(btnElement.getAttribute('data-product-price') || '0') || 0,
+                    currency: 'INR'
+                });
+            }
+
+            btnElement.classList.add('is-added');
+            btnElement.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>';
+            setTimeout(() => { btnElement.classList.remove('is-added'); btnElement.innerHTML = originalHTML; }, 1800);
+            hkShowToast('<i class="fas fa-check-circle" aria-hidden="true"></i> <span>Added to your cart</span> <a href="cart.php">View Cart</a>', false);
+        } else {
+            btnElement.innerHTML = originalHTML;
+            hkShowToast(hkEscape(data.message || 'Error adding product to cart.'), true);
+        }
+    })
+    .catch(() => {
+        btnElement.innerHTML = originalHTML;
+        hkShowToast('An error occurred. Please try again.', true);
+    })
+    .finally(() => {
+        btnElement.classList.remove('is-loading');
+        btnElement.disabled = false;
+    });
+}
+
+function homeToggleWishlist(e, el, productId) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    const formData = new FormData();
+    formData.append('action', 'toggle');
+    formData.append('id', productId);
+
+    fetch('ajax/wishlist.php', { method: 'POST', body: formData, credentials: 'same-origin' })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === 'success') {
+            const added = /added/i.test(data.message || '');
+            el.classList.toggle('is-active', added);
+            const icon = el.querySelector('i');
+            if (icon) { icon.className = (added ? 'fas' : 'far') + ' fa-heart'; }
+            hkShowToast(hkEscape(data.message || 'Wishlist updated'), false);
+            if (added && typeof fbq === 'function') {
+                fbq('track', 'AddToWishlist', { content_ids: [String(productId)], currency: 'INR' });
+            }
+        } else {
+            hkShowToast('Could not update wishlist.', true);
+        }
+    })
+    .catch(() => hkShowToast('An error occurred. Please try again.', true));
+}
+
+function hkEscape(str) {
+    return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+</script>
+
+<script>
+// [NEW] Home: Best Seller / Trending / New Arrival filter chips
+document.addEventListener('DOMContentLoaded', function () {
+    var bar = document.getElementById('homeTagFilter');
+    var grid = document.getElementById('homeProductGrid');
+    if (!bar || !grid) { return; }
+    bar.addEventListener('click', function (e) {
+        var chip = e.target.closest('.hk-chip');
+        if (!chip) { return; }
+        var f = chip.getAttribute('data-filter');
+        bar.querySelectorAll('.hk-chip').forEach(function (c) { c.classList.toggle('active', c === chip); c.setAttribute('aria-selected', c === chip ? 'true' : 'false'); });
+        grid.querySelectorAll('.product-card').forEach(function (card) {
+            var tags = (card.getAttribute('data-tags') || '').split(' ');
+            var show = (f === 'all') ? !card.classList.contains('hk-extra') : tags.indexOf(f) !== -1;
+            card.classList.toggle('hk-filter-hide', !show);
+            if (show) { card.style.animation = 'hkFadeUp .4s ease both'; }
+        });
+    });
+});
+</script>
+
+<!-- JAVASCRIPT FOR INTERACTIONS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Hero Slider
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    
+    if (slides.length > 1) {
+        let currentSlide = 0;
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            if(dots[currentSlide]) dots[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+            if(dots[currentSlide]) dots[currentSlide].classList.add('active');
+        }, 4500); 
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slides[currentSlide].classList.remove('active');
+                if(dots[currentSlide]) dots[currentSlide].classList.remove('active');
+                currentSlide = index;
+                slides[currentSlide].classList.add('active');
+                if(dots[currentSlide]) dots[currentSlide].classList.add('active');
+            });
+        });
+    }
+
+    // 2. Scroll Animations
+    const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -40px 0px" };
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    if (!prefersReducedMotion.matches) {
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    } else {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+    }
+
+    // 4. Reels Video Modal Logic
+    const reelItems = document.querySelectorAll('.reel-item');
+    const videoModal = document.getElementById('videoModal');
+    const modalVideoPlayer = document.getElementById('modalVideoPlayer');
+    const closeVideoModal = document.getElementById('closeVideoModal');
+
+    reelItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const videoSrc = this.getAttribute('data-video');
+            if(videoSrc) {
+                modalVideoPlayer.src = videoSrc;
+                videoModal.classList.add('active');
+                modalVideoPlayer.play();
+            }
+        });
+    });
+
+    function closeModal() {
+        videoModal.classList.remove('active');
+        modalVideoPlayer.pause();
+        modalVideoPlayer.src = ""; 
+    }
+
+    closeVideoModal.addEventListener('click', closeModal);
+    videoModal.addEventListener('click', function(e) {
+        if (e.target === videoModal) { closeModal(); }
+    });
+});
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <!-- Brand & About (Image Logo With White Background) -->
+            <div class="footer-brand">
+                <a href="index.php" style="text-decoration: none; display: inline-block; margin-bottom: 20px;">
+                    <img src="/assets/logo.png" alt="The Hakiman" class="footer-logo">
+                </a>
+                <p class="footer-text">Premium Ayurvedic &amp; Unani remedies and holistic wellness solutions crafted with generations of healing wisdom since 1953.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-widget">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="about.php">Our Heritage</a>
+                    <a href="shop.php">Shop All</a>
+                    <a href="blog.php">Journal</a>
+                    <a href="faq.php">FAQ</a>
+                    <a href="contact.php">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Customer Care -->
+            <div class="footer-widget">
+                <h4 class="footer-title">Customer Care</h4>
+                <div class="footer-links">
+                    <a href="my-account.php">My Account</a>
+                    <a href="shipping-policy.php">Shipping Policy</a>
+                    <a href="refund-policy.php">Returns &amp; Refunds</a>
+                    <a href="privacy-policy.php">Privacy Policy</a>
+                    <a href="terms-and-conditions.php">Terms &amp; Conditions</a>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-widget">
+                <h4 class="footer-title">Location</h4>
+                <div class="footer-contact-wrapper" style="margin-top: 1.5rem;">
+                    <p class="footer-text footer-contact-item"><i class="fas fa-map-marker-alt"></i> 293/640/293/192, Shop No 2 UGF Aishbagh Rd, Lucknow - 226003</p>
+                    <p class="footer-text footer-contact-item"><i class="fas fa-phone"></i> +91 8881116681</p>
+                    <p class="footer-text footer-contact-item last"><i class="fas fa-envelope"></i> hakimanremedies@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Hakiman. All rights reserved.</p>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-google-pay"></i>
+                <i class="fab fa-apple-pay"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- GLOBAL MOBILE FLOATING CTA -->
+<div class="global-mobile-cta" id="global-mobile-cta">
+    <img src="/assets/mob.footer.png" alt="Pashoya Pain Salt" class="gm-cta-img">
+    <div class="gm-cta-title">Pashoya Pain Salt</div>
+    <a href="https://thehakiman.com/product.php?slug=pashoya-pain-salt-joint-support-amp-amp-amp-amp-natural-body-detox-salt-250-g-" class="gm-cta-btn">Buy Now</a>
+</div>
+
+<!-- Footer CSS -->
+<style>
+    /* -------------------------------------------
+       Footer Redesign
+    ------------------------------------------- */
+    .footer {
+        background-color: var(--c-forest);
+        color: var(--c-cream);
+        padding: 70px 0 20px;
+        font-family: var(--font-sans);
+        border-top: 1px solid rgba(250, 246, 240, 0.1);
+    }
+    
+    .footer-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    /* Fixed Logo Styling: Added White Background */
+    .footer-logo {
+        max-width: 180px;
+        max-height: 70px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        background-color: #ffffff; /* White background added */
+        padding: 10px 15px; /* Spacing around the logo */
+        border-radius: 8px; /* Smooth rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow for 3D effect */
+    }
+
+    .footer-title {
+        font-family: var(--font-serif);
+        font-size: 1.3rem;
+        color: var(--c-cream) !important;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    .footer-text {
+        color: var(--c-cream) !important;
+        opacity: 0.85;
+        line-height: 1.7;
+        font-size: 0.95rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        color: var(--c-cream);
+        text-decoration: none;
+        opacity: 0.85;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+        width: fit-content;
+    }
+    
+    .footer-links a:hover {
+        color: var(--c-orange-primary);
+        opacity: 1;
+        transform: translateX(5px);
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(250, 246, 240, 0.1);
+        color: var(--c-cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        background-color: var(--c-orange-primary);
+        color: var(--c-white);
+        transform: translateY(-3px);
+    }
+
+    .footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-contact-item i {
+        color: var(--c-orange-primary) !important;
+        margin-top: 5px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        border-top: 1px solid rgba(250, 246, 240, 0.15);
+    }
+
+    .footer-bottom p {
+        color: var(--c-cream);
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+
+    .payment-icons {
+        display: flex;
+        gap: 15px;
+        font-size: 1.5rem;
+        color: var(--c-cream);
+        opacity: 0.7;
+    }
+
+    /* -------------------------------------------
+       GLOBAL MOBILE FLOATING CTA CSS
+    ------------------------------------------- */
+    .global-mobile-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(250, 246, 240, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 8px 15px 8px 5px; /* Less padding on left to push image to edge */
+        box-shadow: 0 -3px 15px rgba(0,0,0,0.08);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+        transform: translateY(100%);
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        border-top: 1px solid rgba(45, 58, 36, 0.05);
+    }
+
+    .global-mobile-cta.visible {
+        transform: translateY(0);
+    }
+
+    .gm-cta-img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+    .gm-cta-title {
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: var(--c-forest);
+        font-family: var(--font-sans);
+        flex: 1;
+        padding: 0 10px;
+        line-height: 1.2;
+    }
+
+    .gm-cta-btn {
+        background: var(--c-orange-primary, #55703D);
+        color: #ffffff !important;
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 10px 18px;
+        border-radius: 99px;
+        text-decoration: none;
+        white-space: nowrap;
+        box-shadow: 0 4px 10px rgba(85, 112, 61, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .gm-cta-btn:hover {
+        background: var(--c-orange-dark, #3D5229);
+        transform: scale(1.02);
+    }
+
+    /* Hide on Desktop */
+    @media (min-width: 769px) {
+        .global-mobile-cta {
+            display: none !important;
+        }
+    }
+
+    /* Mobile Responsiveness for Footer */
+    @media (max-width: 991px) {
+        .footer-top {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            padding: 50px 0 20px;
+        }
+        
+        .footer-top {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .footer-bottom {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            margin-bottom: 75px; /* Space for Mobile CTA */
+        }
+    }
+</style>
+
+<script>
+    // Global Mobile Floating CTA Visibility Logic
+    document.addEventListener("DOMContentLoaded", function() {
+        const globalMobileCta = document.getElementById('global-mobile-cta');
+        if (globalMobileCta) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) { 
+                    globalMobileCta.classList.add('visible'); 
+                } else { 
+                    globalMobileCta.classList.remove('visible'); 
+                }
+            }, { passive: true });
+        }
+    });
+</script>
+
+<!-- [NEW] Global: badges, wishlist, live search, categories menu, state/city autocomplete -->
+<script src="/assets/js/hakiman.js?v=4"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

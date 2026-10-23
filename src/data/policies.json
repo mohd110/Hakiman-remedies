@@ -1,0 +1,207 @@
+{
+  "shipping": {
+    "key": "shipping",
+    "eyebrow": "Logistics & Delivery",
+    "title": "Shipping Policy",
+    "intro": "Please review our shipping guidelines and delivery timelines before placing an order.",
+    "updated": "Last Updated: July 30, 2026",
+    "sections": [
+      {
+        "heading": "1. Shipping Coverage",
+        "paragraphs": [
+          "At Hakiman Remedies ( https://www.thehakiman.com/ ), we are committed to making holistic wellness accessible to every household. Currently, our logistical network supports secure and reliable shipping to all states and union territories exclusively within India."
+        ]
+      },
+      {
+        "heading": "2. Processing & Delivery Timeline",
+        "paragraphs": [
+          "We know that when it comes to your health, time is of the essence. We work diligently to ensure your orders are dispatched and delivered promptly:",
+          "Order Processing: Orders are usually processed, packed, and dispatched from our facilities within 2–3 business days.",
+          "Estimated Delivery: Once handed over to our trusted courier partners, you can expect your package to be delivered within 5–7 business days, depending on your geographic location."
+        ]
+      },
+      {
+        "heading": "3. Unforeseen Delays",
+        "paragraphs": [
+          "While we strive to ensure that all deliveries arrive within the estimated timeframe, please note that delivery timelines are estimates. Deliveries may occasionally vary due to unforeseen circumstances beyond our control, such as extreme weather conditions, natural disasters, or sudden logistical disruptions. We appreciate your patience and understanding in such rare occurrences."
+        ]
+      },
+      {
+        "heading": "4. Customer Care & Support",
+        "paragraphs": [
+          "If you have any questions regarding your shipment, order tracking, or delivery status, please contact our support team:",
+          "Phone / WhatsApp: +91 8881116681",
+          "Email: hakimanremedies@gmail.com",
+          "Company Address: 293/640/293/192, Shop No 2 UGF Aishbagh Rd, Lucknow, Uttar Pradesh - 226003",
+          "Consultation Hours: Saturday – Sunday | 9:00 AM – 2:00 PM"
+        ]
+      }
+    ]
+  },
+  "refunds": {
+    "key": "refunds",
+    "eyebrow": "Orders & Support",
+    "title": "Payment, Refund & Returns Policy",
+    "intro": "Please review our payment, refund, and return guidelines carefully before making a purchase.",
+    "updated": "Last Updated: July 30, 2026",
+    "sections": [
+      {
+        "heading": "1. Payments & Security",
+        "paragraphs": [
+          "At Hakiman Remedies ( https://www.thehakiman.com/ ), we prioritize the security of your transactions. All payments are processed through secure, encrypted, and trusted third-party payment gateways. We do not store your credit card, debit card, or UPI details on our servers at any time."
+        ]
+      },
+      {
+        "heading": "2. Refund Policy",
+        "paragraphs": [
+          "We take immense pride in the quality and authenticity of our herbal solutions. However, we understand that issues may occasionally arise during transit or fulfillment:",
+          "Applicability: Refunds are applicable strictly in cases of damaged, incorrect, or non-delivery of products or services.",
+          "Reporting Window: Refund requests must be raised with our support team within 7 days of the delivery date, accompanied by photographic evidence if products arrived damaged or incorrect.",
+          "Processing Timeline: Once an issue is verified and a refund is approved by our quality assurance team, it will be processed back to your original payment method within 7–10 business days."
+        ]
+      },
+      {
+        "heading": "3. Returns & Hygiene Protocol",
+        "paragraphs": [
+          "Due to the natural, health-focused, and perishable nature of our herbal formulations, we maintain a strict returns protocol to ensure safety and hygiene for all our patrons:",
+          "Eligibility: To be eligible for a return, products must be entirely unused, unopened, and in their original packaging with all factory seals intact.",
+          "Inspection: All return requests are subject to physical inspection and approval by our quality assurance team upon receipt of the returned item.",
+          "Shipping Charges: Return shipping costs are the responsibility of the customer unless the return is due to an error on our part (e.g., incorrect item shipped or defective packaging)."
+        ]
+      },
+      {
+        "heading": "4. Shipping & Delivery Timeline",
+        "paragraphs": [
+          "We are committed to making holistic wellness accessible to every household across India:",
+          "Coverage: Our logistical network currently supports secure shipping exclusively to all states and union territories within India.",
+          "Dispatch & Delivery: Orders are usually processed and dispatched from our clinic within 2–3 business days. Once handed over to courier partners, delivery takes approximately 5–7 business days depending on your location.",
+          "Unforeseen Delays: Delivery timelines are estimates and may occasionally vary due to extreme weather, natural disasters, or unexpected logistical disruptions beyond our control."
+        ]
+      },
+      {
+        "heading": "5. Customer Care & Support",
+        "paragraphs": [
+          "If you have any questions about a refund, wish to initiate a return, or require assistance with your order, please reach out to our team:",
+          "Phone / WhatsApp: +91 8881116681",
+          "Email: hakimanremedies@gmail.com",
+          "Company Address: 293/640/293/192, Shop No 2 UGF Aishbagh Rd, Lucknow, Uttar Pradesh - 226003",
+          "Consultation Hours: Saturday – Sunday | 9:00 AM – 2:00 PM"
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "key": "privacy",
+    "eyebrow": "Data & Security",
+    "title": "Privacy Policy",
+    "intro": "We respect your privacy and ensure that your data is handled with the highest standards of security and transparency.",
+    "updated": "Last Updated: July 30, 2026",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "paragraphs": [
+          "At Hakiman Remedies ( https://www.thehakiman.com/ ), we are committed to carrying forward our healing legacy not just through authentic herbal remedies, but also through the unwavering trust of our patrons. This Privacy Policy outlines our practices regarding the collection, use, and protection of your personal information when you use our website or submit inquiries via our Contact Form."
+        ]
+      },
+      {
+        "heading": "2. Information We Collect",
+        "paragraphs": [
+          "To provide you with our holistic wellness solutions and improve your experience, we may collect the following types of information:",
+          "Personal Details: Including your Name, Email Address, Phone Number, and Shipping/Billing Address collected when you submit an inquiry through our contact form, book a consultation, or make a purchase.",
+          "Payment Details: Processed securely via trusted third-party payment gateways. We do not store your direct credit card, debit card, or banking information on our servers.",
+          "Usage Data: Including your IP address, browser type, device information, and the pages you visit on our site to help us optimize our digital presence."
+        ]
+      },
+      {
+        "heading": "3. How We Use Your Information",
+        "paragraphs": [
+          "The information we collect is utilized strictly to enhance your journey toward natural, balanced living. Specifically, we use your data to:",
+          "Process your orders, complete transactions, and ensure timely doorstep delivery.",
+          "Provide personalized customer support and expert consultations with our Hakims.",
+          "Analyze usage patterns in order to improve our website, services, and overall user experience.",
+          "Send relevant updates, wellness insights, and exclusive offers (you may opt out of promotional communications at any time)."
+        ]
+      },
+      {
+        "heading": "4. Data Protection & Security",
+        "paragraphs": [
+          "We implement robust security measures to safeguard your personal information against unauthorized access, alteration, disclosure, or destruction. By blending modern data encryption standards with strict internal access protocols, we ensure that your digital footprint remains as safe as the natural ingredients in our remedies."
+        ]
+      },
+      {
+        "heading": "5. Third-Party Disclosure",
+        "paragraphs": [
+          "Hakiman Remedies does not sell, trade, or otherwise transfer your personally identifiable information to outside parties for marketing purposes. We may share necessary data only with trusted third-party service providers (such as shipping partners and payment processors) who assist us in operating our website and conducting our business, provided those parties agree to keep this information confidential."
+        ]
+      },
+      {
+        "heading": "6. Your Consent & Rights",
+        "paragraphs": [
+          "By utilizing our website and purchasing our herbal solutions, you consent to our Privacy Policy. If you have any questions, concerns, or wish to exercise your rights regarding your personal data (including data removal or updates), please reach out to our support team."
+        ]
+      },
+      {
+        "heading": "7. Contact Information",
+        "paragraphs": [
+          "For any privacy-related questions or support, you can contact Hakiman Remedies through the following channels:",
+          "Phone / WhatsApp: +91 8881116681",
+          "Email: hakimanremedies@gmail.com",
+          "Address: 293/640/293/192, Shop No 2 UGF Aishbagh Rd, Lucknow, Uttar Pradesh - 226003",
+          "Consultation Hours: Saturday – Sunday | 9:00 AM – 2:00 PM"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "key": "terms",
+    "eyebrow": "Legal Information",
+    "title": "Terms & Conditions",
+    "intro": "Please review our rules and regulations to ensure a safe, trustworthy environment for all our patrons.",
+    "updated": "Last Updated: July 30, 2026",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "paragraphs": [
+          "Welcome to Hakiman Remedies ( https://www.thehakiman.com/ ). By accessing or using our website, consultations, and services, you agree to comply with and be bound by these Terms & Conditions. Please read them carefully. If you do not agree with any part of these terms, you must not use our website or services."
+        ]
+      },
+      {
+        "heading": "2. Use of Website & Services",
+        "paragraphs": [
+          "Your use of this website is subject to the following terms of use to ensure a safe and trustworthy environment for all patrons:",
+          "Age Restriction: You must be at least 18 years old to use our services, schedule consultations, or make purchases through this platform.",
+          "Educational Purpose: Content on this website is for general information and educational purposes only. It is subject to change without notice and should not replace professional medical advice, diagnosis, or treatment.",
+          "Consultations: Appointments are highly recommended for personalized in-person consultations with our Hakim during our official consultation hours (Saturday – Sunday, 9:00 AM – 2:00 PM).",
+          "Prohibited Conduct: Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense."
+        ]
+      },
+      {
+        "heading": "3. Intellectual Property",
+        "paragraphs": [
+          "All content, logos, images, text, herbal formulations, and materials displayed on this website are the exclusive property of Hakiman Remedies. Reproduction, distribution, or copying of any material is strictly prohibited without explicit, written permission from our company."
+        ]
+      },
+      {
+        "heading": "4. Limitation of Liability",
+        "paragraphs": [
+          "While we strive to provide the highest quality herbal solutions and care rooted in our healing tradition since 1953, we are not liable for any indirect, incidental, special, or consequential damages arising from the use of our services, consultations, products, or website. Individual results from our remedies may vary, and products should be used strictly as directed."
+        ]
+      },
+      {
+        "heading": "5. Governing Law & Jurisdiction",
+        "paragraphs": [
+          "These terms shall be governed by and interpreted in accordance with the laws of India. Any disputes arising in connection with these Terms & Conditions or the use of our website shall be subject to the exclusive jurisdiction of the courts in Lucknow, Uttar Pradesh, India."
+        ]
+      },
+      {
+        "heading": "6. Contact Us",
+        "paragraphs": [
+          "If you have any questions or concerns regarding these Terms & Conditions, please contact us at:",
+          "Phone / WhatsApp: +91 8881116681",
+          "Email: hakimanremedies@gmail.com",
+          "Address: 293/640/293/192, Shop No 2 UGF Aishbagh Rd, Lucknow, Uttar Pradesh - 226003"
+        ]
+      }
+    ]
+  }
+}
