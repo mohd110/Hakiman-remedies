@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -18,10 +18,19 @@ import { ScrollTrigger } from './lib/motion'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useEffect(() => {
+  // Layout effect so the new page never paints at the old scroll position.
+  useLayoutEffect(() => {
+    // ScrollTrigger remembers the last page's scroll and restores it on
+    // refresh; forget it, and stop the browser restoring it on reload too.
+    ScrollTrigger.clearScrollMemory('manual')
     window.scrollTo(0, 0)
     // Layout changes between routes; let triggers re-measure after paint.
-    requestAnimationFrame(() => ScrollTrigger.refresh())
+    // refresh() can still restore its cached scroll, so reset once more after.
+    const frame = requestAnimationFrame(() => {
+      ScrollTrigger.refresh()
+      window.scrollTo(0, 0)
+    })
+    return () => cancelAnimationFrame(frame)
   }, [pathname])
   return null
 }
