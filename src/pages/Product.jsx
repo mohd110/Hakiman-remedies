@@ -292,7 +292,7 @@ function DesktopTop({ page, buy }) {
           </div>
           <button onClick={addToCart} style={sx('flex: 1 1 160px; height: 58px; border-radius: 14px; border: 2px solid #2B1A11; background: #FFFFFF; color: #2B1A11; font-family: inherit; font-size: 16px; font-weight: 800; cursor: pointer')}>{added ? 'Added to cart' : 'Add to cart'}</button>
         </div>
-        <button onClick={buyNow} style={sx(`height: 62px; border-radius: 14px; border: 0; background: ${CTA}; color: #FFFFFF; font-family: inherit; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px`)}>Buy now · <span>{selPrice}</span> <ArrowRight /></button>
+        <button data-hk-cta onClick={buyNow} style={sx(`height: 62px; border-radius: 14px; border: 0; background: ${CTA}; color: #FFFFFF; font-family: inherit; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px`)}>Buy now · <span>{selPrice}</span> <ArrowRight /></button>
 
         <a href={askHref(page.name)} target="_blank" rel="noreferrer" style={sx('display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; border-radius: 14px; background: #E6F3EA; color: #1E5B36; font-size: 15px; font-weight: 700; text-decoration: none; padding: 0 16px')}>
           <WhatsAppIcon />
@@ -393,7 +393,7 @@ function MobileTop({ page, buy }) {
           </div>
         )}
 
-        <button onClick={buyNow} style={sx(`height: 56px; border-radius: 14px; border: 0; background: ${CTA}; color: #FFFFFF; font-family: inherit; font-size: 17px; font-weight: 800; cursor: pointer`)}>Buy now · {selPrice}</button>
+        <button data-hk-cta onClick={buyNow} style={sx(`height: 56px; border-radius: 14px; border: 0; background: ${CTA}; color: #FFFFFF; font-family: inherit; font-size: 17px; font-weight: 800; cursor: pointer`)}>Buy now · {selPrice}</button>
         <a href={askHref(page.name)} target="_blank" rel="noreferrer" style={sx('display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; border-radius: 12px; background: #E6F3EA; color: #1E5B36; font-size: 14px; font-weight: 700; text-decoration: none')}>Ask our Hakim on WhatsApp</a>
 
         <div style={sx('display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; font-size: 12px; font-weight: 700; text-align: center')}>
@@ -545,7 +545,7 @@ function WhenToUse({ page, buyNow }) {
       </div>
 
       <div style={sx('display: flex; justify-content: center; margin-top: 36px')}>
-        <button onClick={buyNow} style={sx(`height: 58px; padding: 0 36px; border-radius: 14px; border: 0; background: ${CTA}; color: #FFFFFF; font-family: inherit; font-size: 17px; font-weight: 800; cursor: pointer`)}>Buy now · {page.price}</button>
+        <button data-hk-cta onClick={buyNow} style={sx(`height: 58px; padding: 0 36px; border-radius: 14px; border: 0; background: ${CTA}; color: #FFFFFF; font-family: inherit; font-size: 17px; font-weight: 800; cursor: pointer`)}>Buy now · {page.price}</button>
       </div>
     </section>
   )
@@ -771,7 +771,7 @@ function FinalOffer({ page, m, buyNow }) {
             {page.mrp && <span style={sx('font-size: 17px; text-decoration: line-through; color: #D9BFA3')}>{page.mrp}</span>}
             {page.off && <span style={sx('font-size: 14px; font-weight: 800; color: #F5B98C')}>{page.off.replace('OFF', 'off')}</span>}
           </div>
-          <button onClick={buyNow} style={sx('height: 60px; max-width: 360px; border-radius: 14px; border: 0; background: #FBEBD8; color: #3B2417; font-family: inherit; font-size: 18px; font-weight: 800; cursor: pointer')}>Buy now</button>
+          <button data-hk-cta onClick={buyNow} style={sx('height: 60px; max-width: 360px; border-radius: 14px; border: 0; background: #FBEBD8; color: #3B2417; font-family: inherit; font-size: 18px; font-weight: 800; cursor: pointer')}>Buy now</button>
           <div style={sx('display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 13px; color: #F2D7BE')}>
             {f.perks.map((p) => <span key={p}>{p}</span>)}
           </div>
@@ -808,11 +808,43 @@ function CrossSell({ page, m }) {
   )
 }
 
-function StickyBar({ page, m, sel, selPrice, buyNow }) {
+// Shown only while none of the page's own Buy now buttons (data-hk-cta) or the
+// footer are on screen, so it never sits on top of the buy box.
+function useStickyBarVisible(root) {
+  const [show, setShow] = useState(false)
+  useEffect(() => {
+    const els = [...(root.current?.querySelectorAll('[data-hk-cta], :scope > footer') ?? [])]
+    if (!els.length) return
+    let frame = 0
+    const check = () => {
+      frame = 0
+      const rects = els.map((el) => el.getBoundingClientRect())
+      const onScreen = rects.some((r) => r.bottom > 0 && r.top < window.innerHeight)
+      // Only once the visitor has scrolled past the first buy button
+      setShow(!onScreen && rects[0].bottom < 0)
+    }
+    const onScroll = () => { frame ||= requestAnimationFrame(check) }
+    check()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      cancelAnimationFrame(frame)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
+  }, [root])
+  return show
+}
+
+const hidden = (show, offset) => show
+  ? 'transform: translateY(0); opacity: 1; visibility: visible; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s'
+  : `transform: translateY(${offset}); opacity: 0; visibility: hidden; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0.35s`
+
+function StickyBar({ page, m, sel, selPrice, buyNow, show }) {
   if (m) {
     const line = sel ? `${sel.title} · ${sel.price}` : `${page.name} · ${page.price}`
     return (
-      <div style={sx('position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: #FFFFFF; border-top: 1px solid #E2C8AC; box-shadow: 0 -8px 24px rgba(43,26,17,0.12); padding: 10px 16px max(18px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 12px')}>
+      <div aria-hidden={!show} style={sx(`position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: #FFFFFF; border-top: 1px solid #E2C8AC; box-shadow: 0 -8px 24px rgba(43,26,17,0.12); padding: 10px 16px max(18px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 12px; ${hidden(show, '110%')}`)}>
         <div style={sx('flex: 1; min-width: 0')}>
           <div style={sx('font-weight: 800; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis')}>{line}</div>
           <div style={sx('font-size: 12px; color: #6A5244')}>Ships in 2–3 days</div>
@@ -823,7 +855,7 @@ function StickyBar({ page, m, sel, selPrice, buyNow }) {
   }
   return (
     <div style={sx('position: sticky; bottom: 16px; z-index: 5; display: flex; justify-content: center; padding: 0 16px; margin-top: -96px; margin-bottom: 16px; pointer-events: none')}>
-      <div style={sx('pointer-events: auto; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #E2C8AC; border-radius: 18px; padding: 10px 10px 10px 12px; box-shadow: 0 12px 32px rgba(43,26,17,0.18); max-width: 620px; width: 100%; box-sizing: border-box; flex-wrap: wrap')}>
+      <div aria-hidden={!show} style={sx(`pointer-events: ${show ? 'auto' : 'none'}; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #E2C8AC; border-radius: 18px; padding: 10px 10px 10px 12px; box-shadow: 0 12px 32px rgba(43,26,17,0.18); max-width: 620px; width: 100%; box-sizing: border-box; flex-wrap: wrap; ${hidden(show, '24px')}`)}>
         <img src={page.featured ? '/assets/pdp/pashoya-jar.webp' : page.gallery[0].src} alt="" style={sx(`width: 48px; height: 48px; object-fit: ${page.featured ? 'contain' : 'cover'}; border-radius: 10px; background: #F7E1C8; padding: ${page.featured ? '4px' : '0'}; box-sizing: border-box`)} />
         <div style={sx('flex: 1 1 140px; min-width: 0')}>
           <div style={sx('font-weight: 800; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis')}>{page.name}</div>
@@ -854,6 +886,8 @@ function ProductPage({ product }) {
   const [pack, setPack] = useState(page.defaultPack ?? null)
   const [qty, setQty] = useState(1)
   const [added, setAdded] = useState(false)
+  const root = useRef(null)
+  const barShown = useStickyBarVisible(root)
 
   useEffect(() => {
     document.title = `${page.name} | The Hakiman`
@@ -879,7 +913,7 @@ function ProductPage({ product }) {
   const buy = { pack, setPack, qty, setQty, selPrice: m && !sel ? page.price : selPrice, addToCart, buyNow, added }
 
   return (
-    <div className="hk-pdp" style={sx("font-family: 'Manrope', system-ui, sans-serif; color: #2B1A11; background: #FBF5EC; min-height: 100%; display: flex; flex-direction: column")}>
+    <div ref={root} className="hk-pdp" style={sx("font-family: 'Manrope', system-ui, sans-serif; color: #2B1A11; background: #FBF5EC; min-height: 100%; display: flex; flex-direction: column")}>
       <PdpHeader m={m} announce={page.announce} />
 
       <div style={sx('flex: 1')}>
@@ -938,7 +972,7 @@ function ProductPage({ product }) {
       </div>
 
       <PdpFooter m={m} />
-      <StickyBar page={page} m={m} sel={sel} selPrice={buy.selPrice} buyNow={buyNow} />
+      <StickyBar page={page} m={m} sel={sel} selPrice={buy.selPrice} buyNow={buyNow} show={barShown} />
     </div>
   )
 }
