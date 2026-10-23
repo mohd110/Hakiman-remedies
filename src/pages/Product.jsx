@@ -27,7 +27,6 @@ function buildPage(product) {
     mrp: product.compareAtPrice ? formatPrice(product.compareAtPrice) : null,
     save: d ? `Save ${formatPrice(d.save)}` : null,
     off: d ? `${d.percent}% OFF` : null,
-    announceMobile: d ? `${d.percent}% off today · Ships in 2–3 days across India` : 'Ships in 2–3 days across India',
   }
 
   if (product.id === PASHOYA_ID) {
@@ -881,7 +880,7 @@ function ProductPage({ product }) {
 
   return (
     <div className="hk-pdp" style={sx("font-family: 'Manrope', system-ui, sans-serif; color: #2B1A11; background: #FBF5EC; min-height: 100%; display: flex; flex-direction: column")}>
-      <PdpHeader m={m} announce={page.announce} announceMobile={page.announceMobile} />
+      <PdpHeader m={m} announce={page.announce} />
 
       <div style={sx('flex: 1')}>
         {!m && (

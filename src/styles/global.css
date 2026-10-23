@@ -506,6 +506,8 @@ a.contact__card:hover { border-color: var(--green); }
   .show-md { display: inline-grid; }
   .site-header__inner { gap: 8px; }
   .site-header__logo img { height: 44px; }
+  /* The nav is hidden here, so push the actions to the edge again */
+  .site-nav + .site-header__actions { margin-left: auto; margin-right: -8px; }
   .hero__grid, .story-band__grid, .page-hero__split, .story-cols, .promise, .ing__grid, .ritual, .contact, .checkout__grid { grid-template-columns: 1fr; }
   .hero__art { max-width: 560px; width: 100%; margin: 0 auto; }
   .ing--alt .ing__media { order: 0; }

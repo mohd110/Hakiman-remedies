@@ -15,6 +15,20 @@
 
 .hk-pdp :focus-visible { outline: 2px solid #B9470C; outline-offset: 2px; }
 
+/* Announcement marquee */
+.hk-pdp .hk-marquee { overflow: hidden; }
+.hk-pdp .hk-marquee__track { display: flex; width: max-content; animation: hk-marquee 32s linear infinite; }
+.hk-pdp .hk-marquee__row { display: flex; flex: none; gap: 40px; padding-right: 40px; }
+.hk-pdp .hk-marquee:hover .hk-marquee__track { animation-play-state: paused; }
+@keyframes hk-marquee { to { transform: translateX(-50%); } }
+@media (max-width: 767px) {
+  .hk-pdp .hk-marquee__row { gap: 24px; padding-right: 24px; }
+  .hk-pdp .hk-marquee__track { animation-duration: 24s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hk-pdp .hk-marquee__track { animation: none; }
+}
+
 /* Mobile swipe gallery */
 .hk-pdp .hk-swipe { scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .hk-pdp .hk-swipe::-webkit-scrollbar { display: none; }

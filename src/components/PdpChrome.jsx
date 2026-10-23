@@ -38,14 +38,36 @@ const CartIcon = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z" /><path d="M9 8V6a3 3 0 016 0v2" /></svg>
 )
 
-export function PdpHeader({ m, announce, announceMobile }) {
+const sticky = 'position: sticky; top: 0; z-index: 40; background: #FBF5EC'
+
+// Announcement messages scroll as a marquee. The list is rendered twice so the
+// loop is seamless; the copy is hidden from screen readers.
+function Marquee({ m, items }) {
+  const row = (copy) => (
+    <div className="hk-marquee__row" aria-hidden={copy || undefined}>
+      {items.map((a, i) => (
+        <span key={a} style={sx(`display: inline-flex; align-items: center; gap: ${m ? 24 : 40}px`)}>
+          <span style={i === 1 ? sx('color: #F5B98C') : undefined}>{a}</span>
+          <span aria-hidden="true" style={sx('color: #F5B98C; font-size: 10px')}>✦</span>
+        </span>
+      ))}
+    </div>
+  )
+  return (
+    <div className="hk-marquee" role="note" style={sx(`background: #3B2417; color: #FBEBD8; font-size: ${m ? 12 : 13}px; font-weight: ${m ? 700 : 600}; letter-spacing: 0.02em; padding: ${m ? '9px 0' : '10px 0'}; white-space: nowrap`)}>
+      <div className="hk-marquee__track">{row(false)}{row(true)}</div>
+    </div>
+  )
+}
+
+export function PdpHeader({ m, announce }) {
   const { count, setOpen } = useCart()
   const [searchOpen, setSearchOpen] = useState(false)
 
   if (m) {
     return (
-      <>
-        <div style={sx('background: #3B2417; color: #FBEBD8; font-size: 12px; font-weight: 700; text-align: center; padding: 9px 12px')}>{announceMobile}</div>
+      <div style={sx(sticky)}>
+        <Marquee m items={announce} />
         <header style={sx('display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; border-bottom: 1px solid #EAD6C0')}>
           <MobileMenu />
           <Link to="/" aria-label="The Hakiman — home" style={sx('display: block')}>
@@ -53,15 +75,13 @@ export function PdpHeader({ m, announce, announceMobile }) {
           </Link>
           <button aria-label={`Cart, ${count} items`} onClick={() => setOpen(true)} style={sx(iconBtn)}><CartIcon /></button>
         </header>
-      </>
+      </div>
     )
   }
 
   return (
-    <>
-      <div style={sx('background: #3B2417; color: #FBEBD8; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; padding: 10px 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; text-align: center')}>
-        {announce.map((a, i) => <span key={a} style={i === 1 ? sx('color: #F5B98C') : undefined}>{a}</span>)}
-      </div>
+    <div style={sx(sticky)}>
+      <Marquee items={announce} />
       <header style={sx('background: #FBF5EC; border-bottom: 1px solid #EAD6C0')}>
         <div style={sx('max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap')}>
           <div style={sx('display: flex; align-items: center; gap: 36px; flex-wrap: wrap')}>
@@ -83,7 +103,7 @@ export function PdpHeader({ m, announce, announceMobile }) {
       </header>
       {/* Portalled out of .hk-pdp so the overlay keeps the site styles */}
       {createPortal(<SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />, document.body)}
-    </>
+    </div>
   )
 }
 
